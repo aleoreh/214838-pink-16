@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Alekssey Orekhovv](https://up.htmlacademy.ru/adaptive/16/user/214838).
-* Наставник: `Неизвестно`.
+* Студент: [Алексей Орехов](https://up.htmlacademy.ru/adaptive/16/user/214838).
+* Наставник: [Дмитрий Батманов](https://htmlacademy.ru/profile/id10964).
 
 ---
 
