@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="main-header">
+    <a class="main-header__logo logo">Pink</a>
+    <nav class="main-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">HTML Academy</a></li>
+      </ul>
+    </nav>
+    <section class="main-header__banner"></section>
+    <section class="main-header__download download">
+      <button class="download__submit">Скачать приложение</button>
+      <ul class="download__os-list">
+        <li class="download__os-item">iphone</li>
+        <li class="download__os-item">android</li>
+        <li class="download__os-item">windows</li>
+      </ul>
+      <p class="download__descripton">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </section>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Pink</h1>
+    <section class="main__slogan">
+      <p class="main__slogan-item">Устали от серости мегаполиса?</p>
+      <p class="main__slogan-item">Нам есть, что вам предложить!</p>
+    </section>
+    <section class="main__features features">
+      <ul class="features__list">
+        <li class="features__item">
+          <h2 class="features__item-title">Поднимает настроение</h2>
+          <p class="features__item-text">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </li>
+        <li class="features__item">
+          <h2 class="features__item-title">Меняет мир вокруг</h2>
+          <p class="features__item-text">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </li>
+        <li class="features__item">
+          <h2 class="features__item-title">Заводит новых друзей</h2>
+          <p class="features__item-text">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
+      <div class="features__presentation">
+        <img class="features__presentation-image" alt="Как работает приложение: окрашивает ваш мир в розовые тона!" src="how-it-works.jpg" />
+      </div>
+    </section>
+    <section class="reviews-slider">
+      <ul class="reviews-slider__list">
+        <li class="reviews-slider__item review">
+          <h2 class="review__title">Николай Петров</h2>
+          <p class="review__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+          </p>
+        </li>
+        <li class="reviews-slider__item review">
+          <h2 class="review__title">Николай Петров</h2>
+          <p class="review__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+          </p>
+        </li>
+        <li class="reviews-slider__item review">
+          <h2 class="review__title">Николай Петров</h2>
+          <p class="review__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="price-slider">
+      <ul class="price-slider__list offer">
+        <li class="offer__item">
+          <header class="offer__header">
+            <h2 class="offer__price-name">Стандарт</h2>
+            <p class="offer__price-value">3,99 USD</p>
+          </header>
+          <ul class="offer_features-list">
+            <li class="offer__feature-item">Розовый фильтр</li>
+            <li class="offer__feature-item">Смайлики</li>
+            <li class="offer__feature-item offer__feature-item--disabled">Комментарии</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="main-footer"></footer>
+</body>
+
 </html>
