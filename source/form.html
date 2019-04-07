@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">Pink</a>
+    <nav class="main-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <header class="main__page-header page-header">
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="main__slogan">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      </p>
+    </header>
+    <form class="main__contest-form contest-form" action="#">
+      <div class="contest-form__names">
+        <label class="contest-form__label">
+          Фамилия:
+          <input class="contest-form__input" name="last_name" type="text" value=""/>
+        </label>
+        <label class="contest-form__label">
+          Имя:
+          <input class="contest-form__input" name="first_name" type="text" value=""/>
+        </label>
+        <label class="contest-form__label">
+          Отчество:
+          <input class="contest-form__input" name="patronymic" type="text" value=""/>
+        </label>
+      </div>
+      <div class="contest-form__features">
+        <h2 class="contest-form__features-title">Ваши безбашенные достижения в путешествии</h2>
+        <ul class="contest-form__features-list">
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-toggle" name="shark_feature" type="checkbox" value=""/>
+              Сделал селфи с акулой
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-toggle" name="beach_feature" type="checkbox" value=""/>
+              Обгорел на пляже
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-toggle" name="chuck_feature" type="checkbox" value=""/>
+              Видел Чака Норриса
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-toggle" name="souvenir_feature" type="checkbox" value=""/>
+              Накупил сувениров
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-toggle" name="tower_feature" type="checkbox" value=""/>
+              Удержал башню
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-toggle" name="hotel_feature" type="checkbox" value=""/>
+              Разгромил отель
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="contest-form__contacts">
+        <label class="contest-form__label">
+          Номер телефона
+          <input class="contest-form__input" name="phone" type="text" value=""/>
+        </label>
+        <label class="contest-form__label">
+          Адрес почты
+          <input class="contest-form__input" name="email" type="text" value=""/>
+        </label>
+      </div>
+      <div class="contest-form__features">
+        <ul class="contest-form__features-list">
+          <li class="contest-form__features-item">
+            <label class="contest-form__label">
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value=""/>
+              Pink для iOS
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label class="contest-form__label">
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value=""/>
+              Pink на Android
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label class="contest-form__label">
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value=""/>
+              Windows Phone
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="contest-form__label">
+        Опишите свои эмоции
+        <textarea class="contest-form__textarea" cols="30" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </div>
+      <button class="contest-form__submit">Отправить форму</button>
+      <div class="contest-form__legend">
+        <span class="contest-form__legend-required-sybmol">*</span>
+        <span class="contest-form__legend-text">Обязательные поля</span>
+      </div>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__logo">Pink</div>
+    <ul class="main-footer__social-links">
+      <li class="main-footer__social-item">
+        <a class="main-footer__social-link main-footer__social-link--" href="#">twitter</a>
+      </li>
+      <li class="main-footer__social-item">
+        <a class="main-footer__social-link main-footer__social-link--" href="#">facebook</a>
+      </li>
+      <li class="main-footer__social-item">
+        <a class="main-footer__social-link main-footer__social-link--" href="#">youtube</a>
+      </li>
+    </ul>
+    <a class="main-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
+  </footer>
+</body>
+
+</html>
