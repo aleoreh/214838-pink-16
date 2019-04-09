@@ -27,88 +27,88 @@
       </p>
     </header>
     <form class="main__contest-form contest-form" action="https://echo.htmlacademy.ru">
-      <div class="contest-form__names">
+      <fieldset class="contest-form__names">
         <label class="contest-form__label">
           Фамилия:
-          <input class="contest-form__input" name="last_name" type="text" value=""/>
+          <input class="contest-form__input" name="last_name" type="text" placeholder="Укажите фамилию *" />
         </label>
         <label class="contest-form__label">
           Имя:
-          <input class="contest-form__input" name="first_name" type="text" value=""/>
+          <input class="contest-form__input" name="first_name" type="text" placeholder="Введите ваше имя *" />
         </label>
         <label class="contest-form__label">
           Отчество:
-          <input class="contest-form__input" name="patronymic" type="text" value=""/>
+          <input class="contest-form__input" name="patronymic" type="text" placeholder="Ну и отчество тоже" />
         </label>
-      </div>
+      </fieldset>
       <div class="contest-form__features">
         <h2 class="contest-form__features-title">Ваши безбашенные достижения в путешествии</h2>
         <ul class="contest-form__features-list">
           <li class="contest-form__features-item">
             <label>
-              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="shark" checked/>
+              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="shark" checked />
               Сделал селфи с акулой
             </label>
           </li>
           <li class="contest-form__features-item">
             <label>
-              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="beach"/>
+              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="beach" />
               Обгорел на пляже
             </label>
           </li>
           <li class="contest-form__features-item">
             <label>
-              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="chuck"/>
+              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="chuck" />
               Видел Чака Норриса
             </label>
           </li>
           <li class="contest-form__features-item">
             <label>
-              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="souvenir"/>
+              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="souvenir" />
               Накупил сувениров
             </label>
           </li>
           <li class="contest-form__features-item">
             <label>
-              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="tower"/>
+              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="tower" />
               Удержал башню
             </label>
           </li>
           <li class="contest-form__features-item">
             <label>
-              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="hotel"/>
+              <input class="contest-form__features-toggle" name="feature" type="checkbox" value="hotel" />
               Разгромил отель
             </label>
           </li>
         </ul>
       </div>
-      <div class="contest-form__contacts">
+      <fieldset class="contest-form__contacts">
         <label class="contest-form__label">
           Номер телефона
-          <input class="contest-form__input" name="phone" type="text" value=""/>
+          <input class="contest-form__input" name="phone" type="text" placeholder="Номер, пожалуйста" />
         </label>
         <label class="contest-form__label">
           Адрес почты
-          <input class="contest-form__input" name="email" type="text" value=""/>
+          <input class="contest-form__input" name="email" type="text" placeholder="Введите почту *" />
         </label>
-      </div>
+      </fieldset>
       <div class="contest-form__features">
         <ul class="contest-form__features-list">
           <li class="contest-form__features-item">
             <label class="contest-form__label">
-              <input class="contest-form__features-switch" name="os_switch" type="radio" value="ios" checked/>
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value="ios" checked />
               Pink для iOS
             </label>
           </li>
           <li class="contest-form__features-item">
             <label class="contest-form__label">
-              <input class="contest-form__features-switch" name="os_switch" type="radio" value="android"/>
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value="android" />
               Pink на Android
             </label>
           </li>
           <li class="contest-form__features-item">
             <label class="contest-form__label">
-              <input class="contest-form__features-switch" name="os_switch" type="radio" value="windows"/>
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value="windows" />
               Windows Phone
             </label>
           </li>
@@ -118,24 +118,24 @@
         Опишите свои эмоции
         <textarea class="contest-form__textarea" cols="30" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </div>
-      <button class="contest-form__submit">Отправить форму</button>
+      <button class="contest-form__submit" type="submit">Отправить форму</button>
       <div class="contest-form__legend">
-        <span class="contest-form__legend-required-sybmol">*</span>
+        <span class="contest-form__legend-required-sybmol">* &mdash;</span>
         <span class="contest-form__legend-text">Обязательные поля</span>
       </div>
     </form>
   </main>
   <footer class="main-footer">
     <div class="main-footer__logo">Pink</div>
-    <ul class="main-footer__social-links">
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link main-footer__social-link--" href="#">twitter</a>
+    <ul class="main-footer__social-links social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#">twitter</a>
       </li>
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link main-footer__social-link--" href="#">facebook</a>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#">facebook</a>
       </li>
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link main-footer__social-link--" href="#">youtube</a>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">youtube</a>
       </li>
     </ul>
     <a class="main-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
