@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
 
-<body>
+  <body>
 
-  <header class="main-header">
-    <a class="main-header__logo" href="index.html">Pink</a>
-    <nav class="main-header__nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <header class="main__page-header page-header">
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">Pink</a>
+      <nav class="main-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+        </ul>
+      </nav>
     </header>
-    <p class="main__slogan">
-      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-    </p>
-    <section class="main__photos photos">
-      <h2 class="visually-hidden">Фотографии</h2>
-      <ul class="photos__list">
-        <li class="photos__item">
-          <img class="photos__photo" alt="Фотография" src="http://placehold.it/150x100"/>
-          <div class="photos__comment">
-            <a class="photos__comment-user" href="#">Анна</a>
-            <span class="photos__comment-time">(5 минут назад)</span>
-            <p class="photos__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <a class="photos__comment-like" href="">Нравится: 215</a>
-          </div>
+    <main class="main">
+      <div class="main__page-header page-header">
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+        <p class="page-header__slogan">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+      </div>
+      <section class="main__photos photos">
+        <h2 class="visually-hidden">Фотографии</h2>
+        <ul class="photos__list">
+          <li class="photos__item">
+            <img class="photos__photo" alt="Фотография" src="http://placehold.it/150x100"/>
+            <div class="photos__comment">
+              <a class="photos__comment-user" href="#">Анна</a>
+              <span class="photos__comment-time">(5 минут назад)</span>
+              <p class="photos__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <a class="photos__comment-like" href="">Нравится: 215</a>
+            </div>
+          </li>
+          <li class="photos__item">
+            <img class="photos__photo" alt="Фотография" src="http://placehold.it/150x100"/>
+            <div class="photos__comment">
+              <a class="photos__comment-user" href="#">Левон</a>
+              <span class="photos__comment-time">(5 часов назад)</span>
+              <p class="photos__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <a class="photos__comment-like" href="">Нравится: 356</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <p class="main__slogan">
+        Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+      </p>
+      <form class="main__post-image post-image" action="#">
+        <div class="post-image__image"></div>
+        <div class="post-image__buttons-wrapper">
+          <button class="post-image__feature-button post-image__feature-button--crop" type="button">crop</button>
+          <button class="post-image__feature-button post-image__feature-button--fill" type="button">fill</button>
+          <button class="post-image__feature-button post-image__feature-button--contrast" type="button">contrast</button>
+        </div>
+        <div class="post-image__range-slider"></div>
+        <div class="post-image__submit-wrapper">
+          <button class="post-image__button post-image__button--submit">Запостить</button>
+          <button class="post-image__button post-image__button--cancel" type="button">Отмена</button>
+        </div>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__logo">Pink</div>
+      <ul class="main-footer__social-links social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">twitter</a>
         </li>
-        <li class="photos__item">
-          <img class="photos__photo" alt="Фотография" src="http://placehold.it/150x100"/>
-          <div class="photos__comment">
-            <a class="photos__comment-user" href="#">Левон</a>
-            <span class="photos__comment-time">(5 часов назад)</span>
-            <p class="photos__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <a class="photos__comment-like" href="">Нравится: 356</a>
-          </div>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">youtube</a>
         </li>
       </ul>
-    </section>
-    <p class="main__slogan">
-      Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-    </p>
-    <form class="main__post-image post-image" action="#">
-      <div class="post-image__image"></div>
-      <div class="post-image__buttons-wrapper">
-        <button class="post-image__feature-button post-image__feature-button--crop" type="button">crop</button>
-        <button class="post-image__feature-button post-image__feature-button--fill" type="button">fill</button>
-        <button class="post-image__feature-button post-image__feature-button--contrast" type="button">contrast</button>
-      </div>
-      <div class="post-image__range-slider"></div>
-      <div class="post-image__submit-wrapper">
-        <button class="post-image__button post-image__button--submit">Запостить</button>
-        <button class="post-image__button post-image__button--cancel" type="button">Отмена</button>
-      </div>
-    </form>
-  </main>
-  <footer class="main-footer">
-    <div class="main-footer__logo">Pink</div>
-    <ul class="main-footer__social-links social">
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="#">twitter</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">facebook</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">youtube</a>
-      </li>
-    </ul>
-    <a class="main-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
-  </footer>
-</body>
+      <a class="main-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
+    </footer>
+  </body>
 
 </html>
