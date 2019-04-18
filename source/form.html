@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -93,34 +95,36 @@
         </label>
       </fieldset>
       <div class="contest-form__features">
+        <h2 class="contest-form__features-title">С каким приложением путешествовали?</h2>
         <ul class="contest-form__features-list">
           <li class="contest-form__features-item">
-            <label class="contest-form__label">
+            <label>
               <input class="contest-form__features-switch" name="os_switch" type="radio" value="ios" checked />
               Pink для iOS
             </label>
           </li>
           <li class="contest-form__features-item">
-            <label class="contest-form__label">
+            <label>
               <input class="contest-form__features-switch" name="os_switch" type="radio" value="android" />
               Pink на Android
             </label>
           </li>
           <li class="contest-form__features-item">
-            <label class="contest-form__label">
+            <label>
               <input class="contest-form__features-switch" name="os_switch" type="radio" value="windows" />
               Windows Phone
             </label>
           </li>
         </ul>
       </div>
-      <div class="contest-form__label">
-        Опишите свои эмоции
-        <textarea class="contest-form__textarea" cols="30" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <div class="contest-form__comment">
+        <h2 class="contest-form__features-title">Опишите свои эмоции</h2>
+        <textarea class="contest-form__comment-input" cols="30" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </div>
       <button class="contest-form__submit" type="submit">Отправить форму</button>
       <div class="contest-form__legend">
-        <span class="contest-form__legend-required-sybmol">* &mdash;</span>
+        <span class="contest-form__legend-required-sybmol">*</span>
+        &mdash;
         <span class="contest-form__legend-text">Обязательные поля</span>
       </div>
     </form>
