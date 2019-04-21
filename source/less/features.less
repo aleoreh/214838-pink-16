@@ -2,6 +2,29 @@
 
 .features {
   background-color: @bg-secondary-color;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.features__presentation-image {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.features__item-image--desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
 
 .features__item-title {

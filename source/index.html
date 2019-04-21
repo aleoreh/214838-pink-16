@@ -46,18 +46,21 @@
       <section class="main__features features">
         <ul class="features__list">
           <li class="features__item">
+            <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-1-desktop@1x.png"/>
             <h2 class="features__item-title">Поднимает настроение</h2>
             <p class="features__item-text">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
           <li class="features__item">
+            <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-2-desktop@1x.png"/>
             <h2 class="features__item-title">Меняет мир вокруг</h2>
             <p class="features__item-text">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
           <li class="features__item">
+            <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-3-desktop@1x.png"/>
             <h2 class="features__item-title">Заводит новых друзей</h2>
             <p class="features__item-text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -68,6 +71,11 @@
           <img class="features__presentation-image" alt="Как работает приложение: окрашивает ваш мир в розовые тона!" src="img/iphone-screen-3-tablet@1x.png" />
         </div>
       </section>
+      <div class="main__diagram">
+        <b class="main__diagram-title">Эффект на 24 часа!</b>
+        <p class="main__diagram-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="main__diagram-link" href="#">Узнать больше об исследовании</a>
+      </div>
       <section class="reviews-slider">
         <ul class="reviews-slider__list">
           <li class="reviews-slider__item review">
@@ -91,19 +99,41 @@
         </ul>
       </section>
       <section class="price-slider">
-        <ul class="price-slider__list offer">
-          <li class="offer__item">
-            <header class="offer__header">
+        <table class="price-slider__list offer">
+          <tr>
+            <th class="offer__title offer__title--name"></th>
+            <th class="offer__title offer__title--base">
+              <h2 class="offer__price-name">База</h2>
+              <p class="offer__price-value">1,99 USD</p>
+            </th>
+            <th class="offer__title offer__title--standard">
               <h2 class="offer__price-name">Стандарт</h2>
               <p class="offer__price-value">3,99 USD</p>
-            </header>
-            <ul class="offer_features-list">
-              <li class="offer__feature-item">Розовый фильтр</li>
-              <li class="offer__feature-item">Смайлики</li>
-              <li class="offer__feature-item offer__feature-item--disabled">Комментарии</li>
-            </ul>
-          </li>
-        </ul>
+            </th>
+            <th class="offer__title offer__title--unlim">
+              <h2 class="offer__price-name">Анлим</h2>
+              <p class="offer__price-value">9,99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td class="offer__feature-item-name">Розовый фильтр</td>
+            <td class="offer__feature-item offer__feature-item--base"></td>
+            <td class="offer__feature-item offer__feature-item--standard"></td>
+            <td class="offer__feature-item offer__feature-item--unlim"></td>
+          </tr>
+          <tr>
+            <td class="offer__feature-item-name">Смайлики</td>
+            <td class="offer__feature-item offer__feature-item--base"></td>
+            <td class="offer__feature-item offer__feature-item--standard"></td>
+            <td class="offer__feature-item offer__feature-item--unlim"></td>
+          </tr>
+          <tr>
+            <td class="offer__feature-item-name">Комментарии</td>
+            <td class="offer__feature-item offer__feature-item--base"></td>
+            <td class="offer__feature-item offer__feature-item--standard"></td>
+            <td class="offer__feature-item offer__feature-item--unlim"></td>
+          </tr>
+        </table>
       </section>
     </main>
     <section class="contacts">
@@ -126,6 +156,21 @@
         <img alt="Карта" src="img/bg-map-mobile@1x.png"/>
       </div>
     </section>
+    <footer class="main-footer">
+      <div class="main-footer__logo">Pink</div>
+      <ul class="main-footer__social-links social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">youtube</a>
+        </li>
+      </ul>
+      <a class="main-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
+    </footer>
   </body>
 
 </html>
