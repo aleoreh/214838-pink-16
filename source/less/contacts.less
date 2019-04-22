@@ -14,3 +14,15 @@
   font-weight: 200;
   font-size: 24px;
 }
+
+.contacts__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
+}

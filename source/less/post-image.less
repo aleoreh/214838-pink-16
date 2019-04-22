@@ -1,5 +1,9 @@
 .post-image {
   background-color: @bg-secondary-color;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .post-image__button {
@@ -10,5 +14,37 @@
 
   &--cancel {
     color: #dddfe0;
+  }
+}
+
+.post-image__controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-image__buttons {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.post-image__feature {
+  display: flex;
+}
+
+.post-image__feature-range {
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.post-image__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
   }
 }

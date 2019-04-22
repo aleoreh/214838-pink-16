@@ -1,10 +1,67 @@
 .download {
   color: #e9e9ea;
   background-color: #1d2631;
-  font-weight: 200;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    height: 620px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 170px;
+      width: 700px;
+      height: 545px;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+    }
+  }
+}
+
+.download__wrapper {
+  @media (min-width: @tablet-width) {
+    max-width: 50%;
+  }
+}
+
+.download__slogan {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .download__confirm {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.download__os-list {
+  display: flex;
+}
+
+.download__banner {
+  position: relative;
+  height: 400px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 286px;
+    width: 258px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    z-index: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

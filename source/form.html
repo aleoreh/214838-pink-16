@@ -43,7 +43,40 @@
           <input class="contest-form__input" name="patronymic" type="text" placeholder="Ну и отчество тоже" />
         </label>
       </fieldset>
-      <div class="contest-form__features">
+      <div class="contest-form__features contest-form__features--app">
+        <h2 class="contest-form__features-title">С каким приложением путешествовали?</h2>
+        <ul class="contest-form__features-list">
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value="ios" checked />
+              Pink для iOS
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value="android" />
+              Pink на Android
+            </label>
+          </li>
+          <li class="contest-form__features-item">
+            <label>
+              <input class="contest-form__features-switch" name="os_switch" type="radio" value="windows" />
+              Windows Phone
+            </label>
+          </li>
+        </ul>
+      </div>
+      <fieldset class="contest-form__contacts">
+        <label class="contest-form__label">
+          Номер телефона
+          <input class="contest-form__input" name="phone" type="text" placeholder="Номер, пожалуйста" />
+        </label>
+        <label class="contest-form__label">
+          Адрес почты
+          <input class="contest-form__input" name="email" type="text" placeholder="Введите почту *" />
+        </label>
+      </fieldset>
+      <div class="contest-form__features contest-form__features--achieve">
         <h2 class="contest-form__features-title">Ваши безбашенные достижения в путешествии</h2>
         <ul class="contest-form__features-list">
           <li class="contest-form__features-item">
@@ -80,39 +113,6 @@
             <label>
               <input class="contest-form__features-toggle" name="feature" type="checkbox" value="hotel" />
               Разгромил отель
-            </label>
-          </li>
-        </ul>
-      </div>
-      <fieldset class="contest-form__contacts">
-        <label class="contest-form__label">
-          Номер телефона
-          <input class="contest-form__input" name="phone" type="text" placeholder="Номер, пожалуйста" />
-        </label>
-        <label class="contest-form__label">
-          Адрес почты
-          <input class="contest-form__input" name="email" type="text" placeholder="Введите почту *" />
-        </label>
-      </fieldset>
-      <div class="contest-form__features">
-        <h2 class="contest-form__features-title">С каким приложением путешествовали?</h2>
-        <ul class="contest-form__features-list">
-          <li class="contest-form__features-item">
-            <label>
-              <input class="contest-form__features-switch" name="os_switch" type="radio" value="ios" checked />
-              Pink для iOS
-            </label>
-          </li>
-          <li class="contest-form__features-item">
-            <label>
-              <input class="contest-form__features-switch" name="os_switch" type="radio" value="android" />
-              Pink на Android
-            </label>
-          </li>
-          <li class="contest-form__features-item">
-            <label>
-              <input class="contest-form__features-switch" name="os_switch" type="radio" value="windows" />
-              Windows Phone
             </label>
           </li>
         </ul>
