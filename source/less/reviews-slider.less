@@ -1,11 +1,31 @@
 @reviews-slider_color: #000000;
 
+.reviews-slider {
+  padding-top: 50px;
+}
+
 .reviews-slider__title {
   color: @primary-strong-color;
   font-weight: 700;
   font-size: 18px;
 }
 
-.reviews-slider__text {
-  color: @primary-color;
+.reviews-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .container();
+}
+
+.reviews-slider__item {
+  display: none;
+
+  margin-bottom: 120px;
+
+  text-align: center;
+
+  &--1 {
+    display: list-item;
+  }
 }

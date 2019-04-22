@@ -20,6 +20,9 @@
 }
 
 .download__wrapper {
+  padding-top: 30px;
+  padding-bottom: 35px;
+
   @media (min-width: @tablet-width) {
     max-width: 50%;
   }
@@ -34,30 +37,67 @@
 }
 
 .download__confirm {
+  display: block;
+
+  max-width: 280px;
+  line-height: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
 }
 
 .download__os-list {
+  .container();
+
   display: flex;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  justify-content: space-around;
+
+  list-style: none;
+}
+
+.download__descripton {
+  .container();
+
+  padding-left: 45px;
+  padding-right: 45px;
+
+  font-weight: 200;
+
+  text-align: center;
 }
 
 .download__banner {
   position: relative;
+
   height: 400px;
+
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
   z-index: 1;
 
   &::before {
     content: "";
+
     position: absolute;
+
     bottom: 0;
     left: 0;
     height: 286px;
     width: 258px;
+
     background-image: url("../img/iphone-hand-mobile@1x.png");
+
     z-index: 0;
   }
 
