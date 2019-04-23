@@ -7,12 +7,22 @@
   margin: 0;
 }
 
+.offer td {
+  line-height: 60px;
+}
+
 .offer__title {
+  .container();
+
   color: #ffffff;
   background-color: #283645;
 }
 
 .offer__title--name {
+
+}
+
+.offer__title--standard {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -29,6 +39,27 @@
 }
 
 .offer__title--unlim {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+  }
+}
+
+.offer__feature-item {
+  .container();
+
+  padding-right: 70px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.offer__feature-item--name {
+  text-align: center;
+}
+
+.offer__feature-item--base {
   display: none;
 
   @media (min-width: @tablet-width) {

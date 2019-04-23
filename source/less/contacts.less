@@ -1,6 +1,15 @@
+.contacts {
+  padding-top: 50px;
+}
+
 .contacts__title {
+  margin: 0;
+  padding-bottom: 50px;
+
   font-weight: 200;
   font-size: 24px;
+
+  text-align: center;
 }
 
 .contacts__suggest {
@@ -11,11 +20,23 @@
 
 .contacts__link {
   color: @feature-color;
+
   font-weight: 200;
   font-size: 24px;
+
+  text-decoration: none;
 }
 
 .contacts__list {
+  .container();
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  padding-bottom: 40px;
+
+  text-align: center;
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -25,4 +46,22 @@
   @media (min-width: @desktop-width) {
     flex-wrap: nowrap;
   }
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__suggest {
+  margin-bottom: 10px;
+}
+
+.contacts__map {
+  text-align: center;
 }
