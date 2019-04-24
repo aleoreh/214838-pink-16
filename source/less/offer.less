@@ -1,18 +1,43 @@
-.offer tbody {
-  .container();
+@border-color: #e5e5e5;
+
+table * {
+  // outline: 1px dotted blue;
+}
+
+.offer {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.offer tr {
 }
 
 .offer th {
-  padding: 0;
-  margin: 0;
 }
 
 .offer td {
-  line-height: 60px;
+
+}
+
+.offer__data-wrapper {
+  flex-grow: 1;
+  border-left: 2px solid @border-color;
+  border-right: 2px solid @border-color;
+}
+
+.offer tbody {
+
 }
 
 .offer__title {
   .container();
+
+  display: flex;
+
+  height: 100px;
+
+  flex-direction: column;
 
   color: #ffffff;
   background-color: #283645;
@@ -49,14 +74,26 @@
 .offer__feature-item {
   .container();
 
-  padding-right: 70px;
+
   text-transform: uppercase;
+
+  border-top: 2px solid @border-color;
+  border-bottom: 2px solid @border-color;
 
   background-color: #ffffff;
 }
 
+.offer__feature-item-text {
+  .reset-margin();
+
+  min-height: 58px;
+  padding-left: 21px;
+  padding-right: 30px;
+  line-height: 58px;
+}
+
 .offer__feature-item--name {
-  text-align: center;
+
 }
 
 .offer__feature-item--base {
@@ -84,10 +121,20 @@
 }
 
 .offer__price-name {
+  .reset-margin();
+
+  line-height: 30px;
+  padding-top: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+
   text-transform: uppercase;
 }
 
 .offer__price-value {
+  margin: 0;
+
   font-size: 24px;
   font-weight: 200;
 }
