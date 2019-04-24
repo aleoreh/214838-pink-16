@@ -1,7 +1,35 @@
+.social-link(@url, @img-w, @img-h, @border-color) {
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url(@url);
+  background-repeat: no-repeat;
+  background-position: calc(25px - @img-w/2), calc(25px - @img-h/2);
+
+  border: 2px solid @border-color;
+  border-radius: 25px;
+}
+
 .social {
   display: flex;
+
+  list-style: none;
 }
 
 .social__link {
   color: @feature-color;
+}
+
+.social__link--twitter {
+  .social-link("../img/icon-twitter.svg", 18px, 15px, #e9ebec);
+}
+
+.social__link--facebook {
+  .social-link("../img/icon-facebook.svg", 9px, 19px, #e9ebec);
+}
+
+.social__link--youtube {
+  .social-link("../img/icon-youtube.svg", 15px, 14px, #e9ebec);
 }

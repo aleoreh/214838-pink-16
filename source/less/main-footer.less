@@ -3,9 +3,31 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
 .main-footer__logo {
   color: @primary-color;
+}
+
+.main-footer__copyright {
+  position: relative;
+
+  padding-right: 30px;
+
+  text-decoration: none;
+  color: @primary-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/logo-htmlacademy.svg");
+  }
 }

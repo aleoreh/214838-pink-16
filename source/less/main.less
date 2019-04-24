@@ -7,6 +7,11 @@
   font-size: 24px;
 
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    font-weight: 200;
+  }
 }
 
 .main__slogan-item {
@@ -19,9 +24,35 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+
+    height: 400px;
+
+    padding-left: 310px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
   }
+}
+
+.main__diagram-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main__diagram-text {
+
+}
+
+.main__diagram-link {
+  color: #d22856;
 }
 
 .main__features {
   padding-top: 55px;
+}
+
+.main__download {
+  .container();
 }

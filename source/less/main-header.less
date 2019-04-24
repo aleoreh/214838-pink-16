@@ -2,7 +2,7 @@
   color: #ffffff;
   background-color: #283645;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
   }
@@ -26,4 +26,26 @@
   text-decoration: none;
 
   color: #ffffff;
+}
+
+.main-header__logo-img {
+
+  &--mobile {
+    display: inline-block;
+  }
+  &--tablet {
+    display: none;
+  }
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--mobile {
+      display: none;
+    }
+    &--tablet {
+      display: inline-block;
+    }
+  }
 }

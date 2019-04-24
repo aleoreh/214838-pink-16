@@ -41,10 +41,22 @@ table * {
 
   color: #ffffff;
   background-color: #283645;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+
+    border-left: 2px solid @border-color;
+    border-right: 2px solid @border-color;
+  }
 }
 
 .offer__title--name {
+  @media (min-width: @tablet-width) {
+    .visually-hidden();
 
+
+  }
 }
 
 .offer__title--standard {
@@ -74,13 +86,22 @@ table * {
 .offer__feature-item {
   .container();
 
-
   text-transform: uppercase;
 
   border-top: 2px solid @border-color;
   border-bottom: 2px solid @border-color;
 
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+
+    text-transform: none;
+
+    border-left: 2px solid @border-color;
+    border-right: 2px solid @border-color;
+  }
 }
 
 .offer__feature-item-text {
@@ -90,6 +111,11 @@ table * {
   padding-left: 21px;
   padding-right: 30px;
   line-height: 58px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .offer__feature-item--name {
