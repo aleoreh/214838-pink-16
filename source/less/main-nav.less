@@ -17,6 +17,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -25,6 +26,14 @@
 
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 .main-nav__link {
@@ -39,4 +48,11 @@
 
   color: #ffffff;
   background-color: #283645;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    font-weight: 400;
+
+    text-transform: none;
+  }
 }

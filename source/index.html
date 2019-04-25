@@ -23,29 +23,33 @@
     </svg>
 
     <header class="main-header">
-      <div class="main-header__logo-wrapper">
-        <a class="main-header__logo">
-          <img class="main-header__logo-img main-header__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg"/>
-          <img class="main-header__logo-img main-header__logo-img--tablet" alt="Pink Home" src="img/logo-pink-white-tablet.svg"/>
-        </a>
+      <div class="main-header__wrapper">
+        <div class="main-header__logo-wrapper">
+          <a class="main-header__logo">
+            <img class="main-header__logo-img main-header__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg"/>
+            <img class="main-header__logo-img main-header__logo-img--tablet" alt="Pink Home" src="img/logo-pink-white-tablet.svg"/>
+            <img class="main-header__logo-img main-header__logo-img--desktop" alt="Pink Home" src="img/logo-pink-white-desktop.svg"/>
+          </a>
+        </div>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Pink</h1>
+      <div class="main__banner"></div>
       <section class="main__download download">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <div class="download__banner"></div>
         <div class="download__wrapper">
           <div class="download__slogan">Взгляните на жизнь иначе!</div>
-          <button class="download__confirm">Скачать приложение</button>
+          <a class="download__confirm" href="#">Скачать приложение</a>
           <ul class="download__os-list">
             <li class="download__os-item">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
@@ -82,36 +86,40 @@
       </div>
       <div class="triangle triangle--1"></div>
       <section class="main__features features">
-        <ul class="features__list">
-          <li class="features__item">
-            <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-1-desktop@1x.png"/>
-            <h2 class="features__item-title">Поднимает настроение</h2>
-            <p class="features__item-text">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="features__item">
-            <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-2-desktop@1x.png"/>
-            <h2 class="features__item-title">Меняет мир вокруг</h2>
-            <p class="features__item-text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="features__item">
-            <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-3-desktop@1x.png"/>
-            <h2 class="features__item-title">Заводит новых друзей</h2>
-            <p class="features__item-text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <div class="features__presentation">
+        <div class="features__wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-1-desktop@1x.png"/>
+              <h2 class="features__item-title">Поднимает настроение</h2>
+              <p class="features__item-text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="features__item">
+              <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-2-desktop@1x.png"/>
+              <h2 class="features__item-title">Меняет мир вокруг</h2>
+              <p class="features__item-text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="features__item">
+              <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-3-desktop@1x.png"/>
+              <h2 class="features__item-title">Заводит новых друзей</h2>
+              <p class="features__item-text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+          <div class="features__presentation">
+          </div>
         </div>
       </section>
       <div class="main__diagram">
-        <b class="main__diagram-title">Эффект на 24 часа!</b>
-        <p class="main__diagram-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="main__diagram-link" href="#">Узнать больше об исследовании</a>
+        <div class="main__diagram-wrapper">
+          <b class="main__diagram-title">Эффект на 24 часа!</b>
+          <p class="main__diagram-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="main__diagram-link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
       <section class="reviews-slider">
         <ul class="reviews-slider__list">

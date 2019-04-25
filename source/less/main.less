@@ -1,7 +1,31 @@
+.main__banner {
+  position: relative;
+
+  width: 100vw;
+  height: 395px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    bottom: 0;
+    left: 0;
+
+    width: 258px;
+    height: 286px;
+
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
 .main__slogan {
   .container();
 
-  padding-top: 41px;
+  padding-top: 43px;
 
   font-weight: 200;
   font-size: 24px;
@@ -25,14 +49,33 @@
   @media (min-width: @tablet-width) {
     display: block;
 
-    height: 400px;
+    .container();
 
-    padding-left: 310px;
-
-    background-image: url("../img/icon-timer.svg");
     background-color: #ffffff;
+
+  }
+
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    .container-desktop();
+
+    background-color: #f2f2f2;
+  }
+}
+
+.main__diagram-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-left: 310px;
+    height: 400px;
+    background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-size: 238px 276px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 100px;
+    padding-left: 370px;
   }
 }
 
@@ -41,9 +84,7 @@
   font-weight: 700;
 }
 
-.main__diagram-text {
-
-}
+.main__diagram-text {}
 
 .main__diagram-link {
   color: #d22856;
