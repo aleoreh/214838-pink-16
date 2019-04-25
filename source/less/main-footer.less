@@ -1,24 +1,33 @@
-.main-footer {
+.main-footer__wrapper {
   display: none;
 
   @media (min-width: @tablet-width) {
+    .container();
+
     display: flex;
 
+    height: 130px;
+
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .main-footer__logo {
+  width: 150px;
+
   color: @primary-color;
 }
 
 .main-footer__copyright {
   position: relative;
 
+  width: 150px;
   padding-right: 30px;
 
   text-decoration: none;
+  text-align:right;
+
   color: @primary-color;
 
   &::after {
