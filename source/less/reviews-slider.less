@@ -28,9 +28,12 @@
 
 .reviews-slider__text {
   margin: 0;
-  margin-bottom: 34px;
 
-  font-size: 18px;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews-slider__descr {
@@ -53,6 +56,8 @@
 
 .reviews-slider__item {
   display: none;
+
+  margin-bottom: 34px;
 
   text-align: center;
 
