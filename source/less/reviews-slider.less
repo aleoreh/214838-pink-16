@@ -3,6 +3,10 @@
 .reviews-slider {
   padding-top: 42px;
   margin-bottom: 86px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .reviews-slider__title {
@@ -13,10 +17,29 @@
   color: @primary-strong-color;
   font-weight: 700;
   font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 
 .reviews-slider__text {
   margin: 0;
+  margin-bottom: 34px;
+
+  font-size: 18px;
+}
+
+.reviews-slider__descr {
+  display: none;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .reviews-slider__list {

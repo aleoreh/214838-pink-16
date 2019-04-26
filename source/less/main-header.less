@@ -4,9 +4,8 @@
 }
 
 .main-header__wrapper {
-  .container-desktop();
-
   @media (min-width: @desktop-width) {
+  .container-desktop();
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,6 +13,7 @@
 }
 
 .main-header__logo-wrapper {
+  .container();
   border-bottom: 1px solid #000000;
 }
 
@@ -22,7 +22,7 @@
 
   line-height: 70px;
 
-  padding-left: 10px;
+  // padding-left: 10px;
 
   font-size: 24px;
   font-weight: 200;
@@ -32,8 +32,8 @@
 
   color: #ffffff;
 
-  @media (min-width: @desktop-width) {
-
+  @media (min-width: @tablet-width) {
+    line-height: 110px;
   }
 }
 

@@ -36,6 +36,7 @@ table * {
   display: flex;
 
   height: 100px;
+  padding-top: 20px;
 
   flex-direction: column;
 
@@ -43,8 +44,11 @@ table * {
   background-color: #283645;
 
   @media (min-width: @tablet-width) {
+    height: 80px;
+
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
 
     border-left: 2px solid @border-color;
     border-right: 2px solid @border-color;
@@ -113,8 +117,10 @@ table * {
   line-height: 58px;
 
   @media (min-width: @tablet-width) {
+    min-height: 44px;
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 44px;
   }
 }
 
@@ -150,12 +156,15 @@ table * {
   .reset-margin();
 
   line-height: 30px;
-  padding-top: 20px;
 
   font-size: 18px;
   font-weight: 700;
 
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .offer__price-value {
@@ -163,4 +172,8 @@ table * {
 
   font-size: 24px;
   font-weight: 200;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }

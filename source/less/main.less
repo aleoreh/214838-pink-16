@@ -20,6 +20,10 @@
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main__slogan {
@@ -33,6 +37,8 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-size: 40px;
     font-weight: 200;
   }
@@ -41,6 +47,10 @@
 .main__slogan-item {
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main__diagram {
@@ -66,11 +76,13 @@
 
 .main__diagram-wrapper {
   @media (min-width: @tablet-width) {
+    padding-top: 58px;
     padding-left: 310px;
-    height: 400px;
+    height: 296px;
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-size: 238px 276px;
+    background-position: 0 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -80,11 +92,22 @@
 }
 
 .main__diagram-title {
+  display: block;
+
+  line-height: 36px;
+  margin-bottom: 11px;
+
   font-size: 30px;
   font-weight: 700;
 }
 
-.main__diagram-text {}
+.main__diagram-text {
+  margin: 0;
+  margin-bottom: 14px;
+  padding-right: 10px;
+
+  line-height: 24px;
+}
 
 .main__diagram-link {
   color: #d22856;
@@ -92,4 +115,21 @@
 
 .main__download {
   .container();
+}
+
+.main__price-slider {
+  @media (min-width: @tablet-width) {
+    .container();
+
+    padding-top: 38px;
+  }
+}
+
+.main__map {
+  margin-top: -69px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -136px;
+  }
 }
