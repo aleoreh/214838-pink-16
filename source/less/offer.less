@@ -4,26 +4,26 @@ table * {
   // outline: 1px dotted blue;
 }
 
+.offer__outer {
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
+}
+
 .offer {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
 }
 
-.offer tr {
-}
-
-.offer th {
-}
-
-.offer td {
-
-}
-
 .offer__data-wrapper {
   flex-grow: 1;
   border-left: 2px solid @border-color;
   border-right: 2px solid @border-color;
+
+  @media (min-width: @desktop-width) {
+    height: 60px;
+  }
 }
 
 .offer tbody {
@@ -51,6 +51,10 @@ table * {
 
     border-left: 2px solid @border-color;
     border-right: 2px solid @border-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 95px;
   }
 }
 
@@ -121,6 +125,10 @@ table * {
     padding-right: 15px;
     line-height: 44px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .offer__feature-item--name {
@@ -166,6 +174,10 @@ table * {
   @media (min-width: @tablet-width) {
     font-size: 16px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .offer__price-value {
@@ -176,5 +188,9 @@ table * {
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
   }
 }

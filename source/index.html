@@ -23,28 +23,27 @@
     </svg>
 
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <div class="main-header__logo-wrapper">
-          <a class="main-header__logo">
-            <img class="main-header__logo-img main-header__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg"/>
-            <img class="main-header__logo-img main-header__logo-img--tablet" alt="Pink Home" src="img/logo-pink-white-tablet.svg"/>
-            <img class="main-header__logo-img main-header__logo-img--desktop" alt="Pink Home" src="img/logo-pink-white-desktop.svg"/>
-          </a>
+      <div class="main-header__outer">
+        <div class="main-header__wrapper">
+          <div class="main-header__logo-wrapper">
+            <a class="main-header__logo">
+              <img class="main-header__logo-img main-header__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg"/>
+              <img class="main-header__logo-img main-header__logo-img--tablet" alt="Pink Home" src="img/logo-pink-white-tablet.svg"/>
+              <img class="main-header__logo-img main-header__logo-img--desktop" alt="Pink Home" src="img/logo-pink-white-desktop.svg"/>
+            </a>
+          </div>
+          <nav class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-header__nav main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    <main class="main">
-      <h1 class="visually-hidden">Pink</h1>
-      <div class="main__banner"></div>
-      <section class="main__download download">
+      <div class="main-header__banner"></div>
+      <section class="main-header__download download">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <div class="download__banner"></div>
         <div class="download__wrapper">
@@ -80,6 +79,9 @@
           </p>
         </div>
       </section>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Pink</h1>
       <div class="main__slogan">
         <p class="main__slogan-item">Устали от серости мегаполиса?</p>
         <p class="main__slogan-item">Нам есть, что вам <br/> предложить!</p>
@@ -116,27 +118,27 @@
       </section>
       <div class="main__diagram">
         <div class="main__diagram-wrapper">
-          <b class="main__diagram-title">Эффект<br/>на 24 часа!</b>
-          <p class="main__diagram-text">Британские ученые провели исследования и доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+          <b class="main__diagram-title">Эффект на 24 часа!</b>
+          <p class="main__diagram-text">Британские ученые провели исследования и доказали,<br/> что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
           <a class="main__diagram-link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
       <section class="reviews-slider">
         <ul class="reviews-slider__list">
-          <li class="reviews-slider__item reviews-slider__item--1 review">
+          <li class="reviews-slider__item review">
             <p class="reviews-slider__descr">25 лет, водитель трамвая</p>
             <h2 class="reviews-slider__title">Николай Петров</h2>
             <p class="reviews-slider__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
             </p>
           </li>
-          <li class="reviews-slider__item reviews-slider__item--2 review">
+          <li class="reviews-slider__item reviews-slider__item--hidden review">
             <h2 class="reviews-slider__title">Николай Петров</h2>
             <p class="reviews-slider__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
             </p>
           </li>
-          <li class="reviews-slider__item reviews-slider__item--3 review">
+          <li class="reviews-slider__item reviews-slider__item--hidden review">
             <h2 class="reviews-slider__title">Николай Петров</h2>
             <p class="reviews-slider__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
@@ -146,72 +148,74 @@
       </section>
       <div class="triangle triangle--1"></div>
       <section class="main__price-slider price-slider">
-        <table class="price-slider__list offer">
-          <tr>
-            <th class="offer__title offer__title--name">
-              <div class="offer__data-wrapper">
+        <div class="price-slider__container">
+          <table class="price-slider__list offer">
+            <tr class="offer__header">
+              <th class="offer__title offer__title--name">
+                <div class="offer__data-wrapper">
+                  <h2 class="offer__price-name">Стандарт</h2>
+                  <p class="offer__price-value">3,99 USD</p>
+                </div>
+              </th>
+              <th class="offer__title offer__title--base">
+                <h2 class="offer__price-name">База</h2>
+                <p class="offer__price-value">1,99 USD</p>
+              </th>
+              <th class="offer__title offer__title--standard">
                 <h2 class="offer__price-name">Стандарт</h2>
                 <p class="offer__price-value">3,99 USD</p>
-              </div>
-            </th>
-            <th class="offer__title offer__title--base">
-              <h2 class="offer__price-name">База</h2>
-              <p class="offer__price-value">1,99 USD</p>
-            </th>
-            <th class="offer__title offer__title--standard">
-              <h2 class="offer__price-name">Стандарт</h2>
-              <p class="offer__price-value">3,99 USD</p>
-            </th>
-            <th class="offer__title offer__title--unlim">
-              <h2 class="offer__price-name">Анлим</h2>
-              <p class="offer__price-value">9,99 USD</p>
-            </th>
-          </tr>
-          <tr>
-            <td class="offer__feature-item offer__feature-item--name">
-              <div class="offer__data-wrapper">
-                <p class="offer__feature-item-text">Розовый фильтр</p>
-              </div>
-            </td>
-            <td class="offer__feature-item offer__feature-item--base"></td>
-            <td class="offer__feature-item offer__feature-item--standard"></td>
-            <td class="offer__feature-item offer__feature-item--unlim"></td>
-          </tr>
-          <tr>
-            <td class="offer__feature-item offer__feature-item--name">
-              <div class="offer__data-wrapper">
-                <p class="offer__feature-item-text">Смайлики</p>
-              </div>
-            </td>
-            <td class="offer__feature-item offer__feature-item--base"></td>
-            <td class="offer__feature-item offer__feature-item--standard"></td>
-            <td class="offer__feature-item offer__feature-item--unlim"></td>
-          </tr>
-          <tr>
-            <td class="offer__feature-item offer__feature-item--name">
-              <div class="offer__data-wrapper">
-                <p class="offer__feature-item-text">Комментарии</p>
-              </div>
-            </td>
-            <td class="offer__feature-item offer__feature-item--base"></td>
-            <td class="offer__feature-item offer__feature-item--standard"></td>
-            <td class="offer__feature-item offer__feature-item--unlim"></td>
-          </tr>
-        </table>
+              </th>
+              <th class="offer__title offer__title--unlim">
+                <h2 class="offer__price-name">Анлим</h2>
+                <p class="offer__price-value">9,99 USD</p>
+              </th>
+            </tr>
+            <tr>
+              <td class="offer__feature-item offer__feature-item--name">
+                <div class="offer__data-wrapper">
+                  <p class="offer__feature-item-text">Розовый фильтр</p>
+                </div>
+              </td>
+              <td class="offer__feature-item offer__feature-item--base"></td>
+              <td class="offer__feature-item offer__feature-item--standard"></td>
+              <td class="offer__feature-item offer__feature-item--unlim"></td>
+            </tr>
+            <tr>
+              <td class="offer__feature-item offer__feature-item--name">
+                <div class="offer__data-wrapper">
+                  <p class="offer__feature-item-text">Смайлики</p>
+                </div>
+              </td>
+              <td class="offer__feature-item offer__feature-item--base"></td>
+              <td class="offer__feature-item offer__feature-item--standard"></td>
+              <td class="offer__feature-item offer__feature-item--unlim"></td>
+            </tr>
+            <tr>
+              <td class="offer__feature-item offer__feature-item--name">
+                <div class="offer__data-wrapper">
+                  <p class="offer__feature-item-text">Комментарии</p>
+                </div>
+              </td>
+              <td class="offer__feature-item offer__feature-item--base"></td>
+              <td class="offer__feature-item offer__feature-item--standard"></td>
+              <td class="offer__feature-item offer__feature-item--unlim"></td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
     <section class="contacts">
       <h2 class="contacts__title">Остались вопросы? <br/> Свяжитесь с нами!</h2>
       <ul class="contacts__list">
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--1">
           <div class="contacts__suggest">Звоните:</div>
           <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--2">
           <div class="contacts__suggest">Пишите:</div>
           <a class="contacts__link" href="#">mail@htmlacademy.ru</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--3">
           <div class="contacts__suggest">Приезжайте в гости:</div>
           <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
         </li>
