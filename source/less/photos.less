@@ -82,7 +82,14 @@
   padding-bottom: 25px;
   padding-left: 18px;
 
+
   background-color: @bg-secondary-color;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .photos__item--extended .photos__comment {
@@ -112,6 +119,7 @@
 }
 
 .photos__comment-like {
+  margin-top: auto;
   padding-left: 31px;
 
   font-size: 12px;
