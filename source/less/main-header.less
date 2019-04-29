@@ -18,6 +18,13 @@
   padding-top: 30px;
   padding-left: 60px;
   padding-right: 60px;
+
+  @media (min-width: @desktop-width) {
+    min-height: 220px;
+    padding-left: 280px;
+    padding-right: 280px;
+    padding-top: 65px;
+  }
 }
 
 .main-header__page-title {
@@ -26,6 +33,11 @@
   font-size: 24px;
   font-weight: 200;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    font-weight: 200;
+  }
 }
 
 .main-header__outer {

@@ -6,6 +6,10 @@
   .container();
 
   display: flex;
+
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
 }
 
 .main-nav__logo {
@@ -76,7 +80,7 @@
 .main-nav__list {
   .container();
 
-  display: flex;
+  display: none;
 
   margin: 0;
   padding: 0;
@@ -86,17 +90,13 @@
 
   list-style: none;
 
-  &--folded {
-    display: none;
-  }
-
   @media (min-width: @desktop-width) {
+    display: flex;
+
     margin-left: auto;
+
     flex-direction: row;
     justify-content: space-between;
-    &--folded {
-      display: flex;
-    }
   }
 }
 
