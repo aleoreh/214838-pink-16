@@ -1,7 +1,31 @@
 .main-header {
   color: #ffffff;
-  background-image: url("../img/bg-back-tablet@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #283645;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+}
+
+.main-header__page-title-wrapper {
+  min-height: 140px;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.main-header__page-title {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
 }
 
 .main-header__outer {
@@ -31,6 +55,7 @@
     padding-left: 0;
     padding-right: 0;
     border: none;
+    background: none;
   }
 }
 
@@ -112,9 +137,6 @@
 
   width: 100vw;
   height: 395px;
-
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
 
   &::before {
     position: absolute;

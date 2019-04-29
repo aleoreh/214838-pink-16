@@ -1,26 +1,28 @@
-.main__slogan {
+.main__photos {
+  margin-bottom: 40px;
+}
+
+.main__slogan-wrapper {
   .container();
 
-  margin-bottom: 42px;
-  padding-top: 17px;
+  min-height: 140px;
+  padding-top: 45px;
+}
 
-  font-weight: 200;
+.main__slogan {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 40px;
+
   line-height: 30px;
-
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 50px;
     font-size: 40px;
     font-weight: 200;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 83px;
-    padding-top: 68px;
-    padding-bottom: 0;
-
     font-size: 50px;
     font-weight: 200;
   }
@@ -29,6 +31,13 @@
 .main__slogan-item {
   margin: 0;
   margin-bottom: 32px;
+
+  font-size: 24px;
+  font-weight: 200;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
