@@ -1,13 +1,26 @@
 .main__photos {
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .main__slogan-wrapper {
   .container();
 
   min-height: 140px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 130px;
+    padding-top: 92px;
+  }
 
   @media (min-width: @desktop-width) {
     min-height: 120px;
@@ -18,17 +31,34 @@
 .main__slogan {
   margin: 0;
 
+  margin-bottom: 45px;
+
   line-height: 30px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    font-size: 40px;
-    font-weight: 200;
+    margin-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    font-size: 18px;
+
+    & br {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 64px;
+    padding-left: 0;
+    padding-right: 0;
+
     font-size: 18px;
     font-weight: 400;
+
+    & br {
+      display: inline;
+    }
   }
 }
 
@@ -162,5 +192,37 @@
 
   @media (min-width: @desktop-width) {
     margin-top: -200px;
+  }
+}
+
+.main__post-image {
+
+}
+
+.main__bottom-slogan {
+  margin: 0;
+
+  margin-bottom: 45px;
+
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 130px;
+
+    margin-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 64px;
+    padding-left: 0;
+    padding-right: 0;
+
+    font-size: 18px;
+    font-weight: 400;
   }
 }

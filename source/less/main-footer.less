@@ -6,6 +6,10 @@
 
 .main-footer__wrapper {
   .container();
+
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
 }
 
 .main-footer__body {
@@ -18,12 +22,15 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    height: 50px;
 
-    height: 130px;
-
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 170px;
   }
 }
 
@@ -34,17 +41,22 @@
   color: @primary-color;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
   }
 }
 
 .main-footer__copyright {
+  padding-top: 45px;
   padding-right: 44px;
 
   @media (min-width: @tablet-width) {
 
     position: relative;
 
+    padding-top: 0;
     padding-right: 42px;
     padding-bottom: 5px;
 
@@ -63,8 +75,13 @@
       background-image: url("../img/logo-htmlacademy.svg");
     }
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .main-footer__social-links {
+  margin-bottom: 46px;
   padding-bottom: 5px;
 }

@@ -52,7 +52,7 @@
     <main class="main">
       <div class="main__slogan-wrapper">
         <p class="main__slogan">
-          Взгляните на фотографии, которые выкладывают пользователи!<br/>Видите, как не хватает ваших?
+          Взгляните на фотографии, которые выкладывают пользователи!<br/> Видите, как не хватает ваших?
         </p>
       </div>
       <div class="main__page-header page-header" style="display: none">
@@ -75,6 +75,7 @@
                 <a class="photos__comment-like photos__comment-like--header" href="">Нравится: 215</a>
               </div>
               <p class="photos__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <a class="photos__comment-like photos__comment-like--header-mobile" href="">Нравится: 215</a>
             </div>
           </div>
         </div>
@@ -94,8 +95,8 @@
           </li>
           <li class="photos__item">
             <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-drumset-mobile@1x.jpg" />
-            <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-drumset-mobile@1x.jpg" />
-            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-drumset-mobile@1x.jpg" />
+            <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-drumset-tablet@1x.jpg" />
+            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-drumset-desktop@1x.jpg" />
             <div class="photos__comment">
               <div class="photos__user-time-wrapper">
                 <a class="photos__comment-user" href="#">Антон</a>
@@ -147,7 +148,7 @@
           <li class="photos__item">
             <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-wing-mobile@1x.jpg" />
             <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-wing-tablet@1x.jpg" />
-            <img class="photos__photo photos__photo--desktop-" alt="Фотография" src="img/photo-wing-desktop@1x.jpg" />
+            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-wing-desktop@1x.jpg" />
             <div class="photos__comment">
               <div class="photos__user-time-wrapper">
                 <a class="photos__comment-user" href="#">Надежда</a>
@@ -159,38 +160,42 @@
           </li>
         </ul>
       </section>
-      <p class="main__slogan">
+      <p class="main__bottom-slogan">
         Затмите их всех!<br />Выкладывайте все, что накопилось в телефоне!
       </p>
       <form class="main__post-image post-image" action="#">
-        <img class="post-image__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография для отправки" />
-        <div class="post-image__right">
-          <div class="post-image__controls">
-            <div class="post-image__buttons">
-              <div class="post-image__feature">
-                <button class="post-image__feature-button post-image__feature-button--crop" type="button">
-                  <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-crop.svg" />
-                </button>
-                <div class="post-image__feature-range">crop slider</div>
+        <div class="post-image__inner">
+          <img class="post-image__image post-image__image--mobile" src="img/photo-road-mobile@1x.jpg" alt="Фотография для отправки" />
+          <img class="post-image__image post-image__image--tablet" src="img/photo-road-tablet@1x.jpg" alt="Фотография для отправки" />
+          <img class="post-image__image post-image__image--desktop" src="img/photo-road-desktop@1x.jpg" alt="Фотография для отправки" />
+          <div class="post-image__right">
+            <div class="post-image__controls">
+              <div class="post-image__buttons">
+                <div class="post-image__feature">
+                  <button class="post-image__feature-button post-image__feature-button--crop" type="button">
+                    <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-crop.svg" />
+                  </button>
+                  <div class="post-image__feature-range">crop slider</div>
+                </div>
+                <div class="post-image__feature">
+                  <button class="post-image__feature-button post-image__feature-button--fill" type="button">
+                    <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-fill.svg" />
+                  </button>
+                  <div class="post-image__feature-range">fill slider</div>
+                </div>
+                <div class="post-image__feature">
+                  <button class="post-image__feature-button post-image__feature-button--contrast" type="button">
+                    <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-contrast.svg" />
+                  </button>
+                  <div class="post-image__feature-range">contrast slider</div>
+                </div>
               </div>
-              <div class="post-image__feature">
-                <button class="post-image__feature-button post-image__feature-button--fill" type="button">
-                  <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-fill.svg" />
-                </button>
-                <div class="post-image__feature-range">fill slider</div>
-              </div>
-              <div class="post-image__feature">
-                <button class="post-image__feature-button post-image__feature-button--contrast" type="button">
-                  <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-contrast.svg" />
-                </button>
-                <div class="post-image__feature-range">contrast slider</div>
-              </div>
+              <div class="post-image__standalone-feature-range"></div>
             </div>
-            <div class="post-image__standalone-feature-range"></div>
-          </div>
-          <div class="post-image__submit">
-            <button class="post-image__button post-image__button--submit">Запостить</button>
-            <button class="post-image__button post-image__button--cancel" type="button">Отмена</button>
+            <div class="post-image__submit">
+              <button class="post-image__button post-image__button--submit">Запостить</button>
+              <button class="post-image__button post-image__button--cancel" type="button">Отмена</button>
+            </div>
           </div>
         </div>
       </form>
