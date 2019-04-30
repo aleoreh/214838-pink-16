@@ -64,6 +64,7 @@
   list-style: none;
 
   text-align: center;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -108,16 +109,20 @@
 
   @media (min-width: @desktop-width) {
     min-width: auto;
+
     &--1 {
       order: 1;
     }
+
     &--2 {
       order: 3;
     }
+
     &--3 {
       padding-left: 26px;
       order: 2;
     }
+
     &:last-child .contacts__suggest {
       margin-bottom: 24px;
     }
