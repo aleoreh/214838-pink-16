@@ -1,0 +1,29 @@
+.map__image {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline-block;
+    }
+  }
+}

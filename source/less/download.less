@@ -1,27 +1,53 @@
 .download {
   color: #e9e9ea;
-  background-color: #1d2631;
+  background-color: rgba(255, 255, 255, 0);
 
   @media (min-width: @tablet-width) {
     position: relative;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
     height: 620px;
 
     &::before {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 170px;
-      width: 700px;
+      left: -20px;
+      width: 100vw;
       height: 545px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 740px;
+
+      &::before {
+        top: 0;
+        left: 0;
+
+        height: 740px;
+
+        background-image: url("../img/iphone-hand-desktop@1x.png");
+        background-position: 35px 93px;
+      }
     }
   }
 }
 
 .download__wrapper {
+  position: relative;
+
+  padding-top: 28px;
+  padding-bottom: 30px;
+
   @media (min-width: @tablet-width) {
+    width: 300px;
     max-width: 50%;
+    padding-top: 94px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 370px;
+    padding-top: 106px;
   }
 }
 
@@ -30,34 +56,143 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+
+    margin-bottom: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: 200;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
+
+    padding-left: 10px;
+    padding-right: 80px;
+
+    font-size: 50px;
   }
 }
 
 .download__confirm {
+  display: block;
+
+  max-width: 280px;
+  line-height: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  text-decoration: none;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 293px;
+    margin-left: 0;
+    margin-bottom: 70px;
+    padding-left: 0;
+    padding-right: 0;
+
+    font-size: 21px;
+    font-weight: 700;
+  }
 }
 
 .download__os-list {
+  .container();
+
   display: flex;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  align-items: baseline;
+  justify-content: space-around;
+
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 207px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+
+    justify-content: space-between;
+  }
+}
+
+.download__descripton {
+  .container();
+
+  line-height: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-weight: 200;
+
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding-left: 0;
+    padding-right: 70px;
+  }
 }
 
 .download__banner {
+  display: none;
+
   position: relative;
+
   height: 400px;
+
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
   z-index: 1;
 
   &::before {
     content: "";
+
     position: absolute;
-    bottom: 0;
+
+    bottom: 4px;
     left: 0;
     height: 286px;
     width: 258px;
+
     background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-position: -20px 0;
+    background-repeat: no-repeat;
+
     z-index: 0;
   }
 

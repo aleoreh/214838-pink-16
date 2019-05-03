@@ -1,15 +1,138 @@
-.main-nav__list {
+.main-nav__inner {
+  .container();
+
   display: flex;
-  flex-direction: column;
 
   @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
+}
+
+.main-nav__logo {
+  display: block;
+
+  line-height: 70px;
+
+  font-size: 24px;
+  font-weight: 200;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    line-height: 110px;
+  }
+}
+
+.main-nav__logo-img {
+  &--mobile {
+    display: inline-block;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline-block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline-block;
+    }
+  }
+}
+
+.main-nav__list {
+  .container();
+
+  display: none;
+
+  margin: 0;
+  padding: 0;
+
+  flex-direction: column;
+  align-items: stretch;
+
+  list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+
+    margin-left: auto;
+
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__item {
+  line-height: 62px;
+
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
   }
 }
 
 .main-nav__link {
-  color: #ffffff;
-  background-color: #283645;
+  display: block;
+
   font-weight: 700;
   font-size: 18px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #283645;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 110px;
+
+    font-weight: 400;
+    text-transform: none;
+
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
