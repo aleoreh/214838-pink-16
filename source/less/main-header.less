@@ -13,6 +13,20 @@
   }
 }
 
+.main-header__top-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-header__top {
+  .container();
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
+}
+
 .main-header__page-title-wrapper {
   min-height: 140px;
   padding-top: 30px;

@@ -165,6 +165,13 @@
   }
 }
 
+.main__price-slider-wrapper {
+  &::before {
+    content: "";
+    .triangle--1();
+  }
+}
+
 .main__price-slider {
   padding-top: 60px;
 
@@ -178,6 +185,13 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 70px;
+  }
+}
+
+.main__map-wrapper {
+  &::before {
+    content: "";
+    .triangle--2();
   }
 }
 
@@ -219,5 +233,13 @@
 
     font-size: 18px;
     font-weight: 400;
+  }
+}
+
+.main__features-wrapper {
+  &::before {
+    content: "";
+    display: block;
+    .triangle--1();
   }
 }

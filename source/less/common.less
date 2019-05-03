@@ -1,4 +1,6 @@
-.triangle--1 {
+.triangle--1() {
+  display: block;
+
   border-left: 50vw solid #ffffff;
   border-top: 15px solid #ffffff;
   border-right: 50vw solid #f2f2f2;
@@ -15,8 +17,10 @@
   }
 }
 
-.triangle--2 {
+.triangle--2() {
   position: relative;
+
+  display: block;
 
   border-left: 50vw solid transparent;
   border-top: 35px solid #ffffff;
@@ -32,4 +36,12 @@
     border-top-width: 100px;
     border-bottom-width: 100px;
   }
+}
+
+.triangle--1 {
+  .triangle--1();
+}
+
+.triangle--2 {
+  .triangle--2();
 }
