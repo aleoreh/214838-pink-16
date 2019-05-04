@@ -42,33 +42,8 @@
 .post-image__image {
   margin-bottom: 37px;
 
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    &--mobile,
-    &--desktop {
-      display: none;
-    }
-
-    &--tablet {
-      display: inline-block;
-    }
-  }
-
   @media (min-width: @desktop-width) {
     padding-top: 7px;
-
-    &--mobile,
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: inline-block;
-    }
   }
 }
 

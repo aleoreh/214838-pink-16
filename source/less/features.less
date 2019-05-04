@@ -60,6 +60,11 @@
   background-repeat: no-repeat;
   background-position: calc(50vw - 98px) -5px;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 160px auto;
+  }
+
   @media (min-width: @tablet-width) {
     min-width: 310px;
 

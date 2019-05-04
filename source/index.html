@@ -200,9 +200,11 @@
   <div class="main__map-wrapper">
     <section class="main__map map">
       <h2 class="map__title visually-hidden">Карта</h2>
-      <img class="map__image map__image--mobile" alt="Карта" src="img/bg-map-mobile@1x.png" />
-      <img class="map__image map__image--tablet" alt="Карта" src="img/bg-map-tablet@1x.jpg" />
-      <img class="map__image map__image--desktop" alt="Карта" src="img/bg-map-desktop@1x.jpg" />
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x"/>
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x"/>
+        <img alt="Карта" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"/>
+      </picture>
     </section>
   </div>
   <footer class="main-footer main-footer--hidden">
