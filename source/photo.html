@@ -67,9 +67,11 @@
       <section class="main__photos photos">
         <h2 class="visually-hidden">Фотографии</h2>
         <div class="photos__header-item">
-          <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/panorama-mobile@1x.jpg" />
-          <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/panorama-tablet@1x.jpg" />
-          <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/panorama-desktop@1x.jpg" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" />
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" />
+            <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" />
+          </picture>
           <div class="photos__header-comment-wrapper">
             <div class="photos__header-comment">
               <div class="photos__header-comment-top">
@@ -84,9 +86,11 @@
         </div>
         <ul class="photos__list">
           <li class="photos__item">
-            <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-car-mobile@1x.jpg" />
-            <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-car-tablet@1x.jpg" />
-            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-car-desktop@1x.jpg" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x" />
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x" />
+              <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" />
+            </picture>
             <div class="photos__comment">
               <div class="photos__user-time-wrapper">
                 <a class="photos__comment-user" href="#">Левон</a>
@@ -97,9 +101,11 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-drumset-mobile@1x.jpg" />
-            <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-drumset-tablet@1x.jpg" />
-            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-drumset-desktop@1x.jpg" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x" />
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x" />
+              <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" />
+            </picture>
             <div class="photos__comment">
               <div class="photos__user-time-wrapper">
                 <a class="photos__comment-user" href="#">Антон</a>
@@ -110,9 +116,11 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-window-mobile@1x.jpg" />
-            <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-window-tablet@1x.jpg" />
-            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-window-desktop@1x.jpg" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x" />
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x" />
+              <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" />
+            </picture>
             <div class="photos__comment">
               <div class="photos__user-time-wrapper">
                 <a class="photos__comment-user" href="#">Борис</a>
@@ -123,9 +131,11 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-fair-mobile@1x.jpg" />
-            <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-fair-tablet@1x.jpg" />
-            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-fair-desktop@1x.jpg" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x" />
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x" />
+              <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" />
+            </picture>
             <div class="photos__comment">
               <div class="photos__user-time-wrapper">
                 <a class="photos__comment-user" href="#">Сергей</a>
@@ -136,9 +146,11 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-pov-mobile@1x.jpg" />
-            <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-pov-tablet@1x.jpg" />
-            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-pov-desktop@1x.jpg" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x" />
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x" />
+              <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" />
+            </picture>
             <div class="photos__comment">
               <div class="photos__user-time-wrapper">
                 <a class="photos__comment-user" href="#">Максим</a>
@@ -149,9 +161,11 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-wing-mobile@1x.jpg" />
-            <img class="photos__photo photos__photo--tablet" alt="Фотография" src="img/photo-wing-tablet@1x.jpg" />
-            <img class="photos__photo photos__photo--desktop" alt="Фотография" src="img/photo-wing-desktop@1x.jpg" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x" />
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x" />
+              <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" />
+            </picture>
             <div class="photos__comment">
               <div class="photos__user-time-wrapper">
                 <a class="photos__comment-user" href="#">Надежда</a>
@@ -168,9 +182,11 @@
       </p>
       <form class="main__post-image post-image" action="#">
         <div class="post-image__inner">
-          <img class="post-image__image post-image__image--mobile" src="img/photo-road-mobile@1x.jpg" alt="Фотография для отправки" />
-          <img class="post-image__image post-image__image--tablet" src="img/photo-road-tablet@1x.jpg" alt="Фотография для отправки" />
-          <img class="post-image__image post-image__image--desktop" src="img/photo-road-desktop@1x.jpg" alt="Фотография для отправки" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x" />
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x" />
+            <img class="post-image__image post-image__image--mobile" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография для отправки" />
+          </picture>
           <div class="post-image__right">
             <div class="post-image__controls">
               <div class="post-image__buttons">
