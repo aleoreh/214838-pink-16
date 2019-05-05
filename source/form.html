@@ -14,9 +14,11 @@
     <div class="main-header__top-wrapper">
       <div class="main-header__top">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-img main-nav__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg" />
-          <img class="main-nav__logo-img main-nav__logo-img--tablet" alt="Pink Home" src="img/logo-pink-white-tablet.svg" />
-          <img class="main-nav__logo-img main-nav__logo-img--desktop" alt="Pink Home" src="img/logo-pink-white-desktop.svg" />
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x" />
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x" />
+            <img class="main-nav__logo-img main-nav__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg" />
+          </picture>
         </a>
         <nav class="main-header__nav main-nav">
           <div class="main-nav__inner">

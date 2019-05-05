@@ -31,40 +31,33 @@
 .main__slogan {
   margin: 0;
 
-  margin-bottom: 45px;
+  margin-bottom: 30px;
+  padding-top: 43px;
 
   line-height: 30px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-bottom: 50px;
+    padding-top: 48px;
 
     font-size: 18px;
-
-    & br {
-      display: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 64px;
+    margin-bottom: 80px;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 72px;
 
     font-size: 18px;
     font-weight: 400;
-
-    & br {
-      display: inline;
-    }
   }
 }
 
 .main__slogan-item {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 
   font-size: 24px;
   font-weight: 200;
@@ -74,11 +67,30 @@
   }
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 45px;
+
+    &--squeezed {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
     margin-bottom: 0;
+    font-size: 50px;
+    line-height: 59px;
+
+    &--squeezed {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
   }
 }
 
-.main__diagram {
+.main__diagram-wrapper {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -96,9 +108,9 @@
   }
 }
 
-.main__diagram-wrapper {
+.main__diagram{
   @media (min-width: @tablet-width) {
-    padding-top: 58px;
+    padding-top: 95px;
     padding-left: 310px;
     height: 296px;
     background-image: url("../img/icon-timer.svg");
@@ -126,8 +138,12 @@
   font-size: 30px;
   font-weight: 700;
 
+  @media (min-width: @tablet-width) {
+    padding-right: 60px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     padding-left: 370px;
   }
 }
@@ -196,7 +212,7 @@
 }
 
 .main__map {
-  margin-top: -69px;
+  margin-top: -68px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -241,5 +257,21 @@
     content: "";
     display: block;
     .triangle--1();
+  }
+}
+
+.main__contacts {
+  .container();
+
+  margin-bottom: 40px;
+  padding-top: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    padding-top: 65px;
   }
 }
