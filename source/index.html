@@ -14,9 +14,11 @@
     <div class="main-header__top-wrapper">
       <div class="main-header__top">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-img main-nav__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg" />
-          <img class="main-nav__logo-img main-nav__logo-img--tablet" alt="Pink Home" src="img/logo-pink-white-tablet.svg" />
-          <img class="main-nav__logo-img main-nav__logo-img--desktop" alt="Pink Home" src="img/logo-pink-white-desktop.svg" />
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x" />
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x" />
+            <img class="main-nav__logo-img main-nav__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg" />
+          </picture>
         </a>
         <nav class="main-header__nav main-nav">
           <div class="main-nav__inner">
@@ -56,30 +58,44 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">Pink</h1>
-    <div class="main__slogan">
-      <p class="main__slogan-item">Устали от серости мегаполиса?</p>
-      <p class="main__slogan-item">Нам есть, что вам предложить!</p>
+    <div class="main__slogan-wrapper">
+      <div class="main__slogan">
+        <p class="main__slogan-item">Устали от серости мегаполиса?</p>
+        <p class="main__slogan-item main__slogan-item--squeezed">Нам есть, что вам предложить!</p>
+      </div>
     </div>
     <div class="main__features-wrapper">
       <section class="main__features features">
         <div class="features__inner">
           <ul class="features__list">
             <li class="features__item">
-              <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-1-desktop@1x.png" />
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x" />
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x"/>
+                <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" />
+              </picture>
               <h2 class="features__item-title">Поднимает настроение</h2>
               <p class="features__item-text">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
             <li class="features__item">
-              <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-2-desktop@1x.png" />
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x" />
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x"/>
+                <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" />
+              </picture>
               <h2 class="features__item-title">Меняет мир вокруг</h2>
               <p class="features__item-text">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
             </li>
             <li class="features__item">
-              <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-3-desktop@1x.png" />
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x" />
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x"/>
+                <img class="features__item-image features__item-image--desktop" alt="Фото без обработки" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" />
+              </picture>
               <h2 class="features__item-title">Заводит новых друзей</h2>
               <p class="features__item-text">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -91,9 +107,9 @@
         </div>
       </section>
     </div>
-    <div class="main__diagram">
-      <div class="main__diagram-wrapper">
-        <b class="main__diagram-title">Эффект на 24 часа!</b>
+    <div class="main__diagram-wrapper">
+      <div class="main__diagram">
+        <b class="main__diagram-title">Эффект на&nbsp;24&nbsp;часа!</b>
         <p class="main__diagram-text">Британские ученые провели исследования и доказали,<br /> что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
         <a class="main__diagram-link" href="#">Узнать больше об исследовании</a>
       </div>
@@ -123,25 +139,26 @@
     </section>
     <div class="main__price-slider-wrapper">
       <section class="main__price-slider price-slider">
+        <h2 class="visually-hidden">Цены</h2>
         <div class="price-slider__container">
           <table class="price-slider__list offer">
             <tr class="offer__header">
               <th class="offer__title offer__title--name">
                 <div class="offer__data-wrapper">
-                  <h2 class="offer__price-name">Стандарт</h2>
+                  <div class="offer__price-name">Стандарт</div>
                   <p class="offer__price-value">3,99 USD</p>
                 </div>
               </th>
               <th class="offer__title offer__title--base">
-                <h2 class="offer__price-name">База</h2>
+                <div class="offer__price-name">База</div>
                 <p class="offer__price-value">1,99 USD</p>
               </th>
               <th class="offer__title offer__title--standard">
-                <h2 class="offer__price-name">Стандарт</h2>
+                <div class="offer__price-name">Стандарт</div>
                 <p class="offer__price-value">3,99 USD</p>
               </th>
               <th class="offer__title offer__title--unlim">
-                <h2 class="offer__price-name">Анлим</h2>
+                <div class="offer__price-name">Анлим</div>
                 <p class="offer__price-value">9,99 USD</p>
               </th>
             </tr>
@@ -180,7 +197,7 @@
       </section>
     </div>
   </main>
-  <section class="contacts">
+  <section class="main__contacts contacts">
     <h2 class="contacts__title">Остались вопросы? <br /> Свяжитесь с нами!</h2>
     <ul class="contacts__list">
       <li class="contacts__item contacts__item--1">
@@ -201,7 +218,7 @@
     <section class="main__map map">
       <h2 class="map__title visually-hidden">Карта</h2>
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x"/>
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x"/>
         <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x"/>
         <img alt="Карта" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"/>
       </picture>
