@@ -46,7 +46,7 @@
   .triangle--2();
 }
 
-.triangle-base (@height, @width: 100%) {
+.triangle-base(@height, @width: 100%) {
   content: "";
   position: absolute;
   top: 0;
@@ -80,6 +80,7 @@
     .triangle-base(@height / 2, 50%);
     background: linear-gradient(to right top, transparent 50%, @color 50%);
   }
+
   &::after {
     .triangle-base(@height / 2, 50%);
     left: auto;
