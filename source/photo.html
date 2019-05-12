@@ -35,29 +35,10 @@
       <div class="main-header__page-title-wrapper">
         <h1 class="main-header__page-title">Фотографии пользователей</h1>
       </div>
-      <div class="main-header__outer" style="display: none">
-        <div class="main-header__wrapper">
-          <div class="main-header__logo-wrapper">
-            <a class="main-header__logo">
-              <img class="main-header__logo-img main-header__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg" />
-              <img class="main-header__logo-img main-header__logo-img--tablet" alt="Pink Home" src="img/logo-pink-white-tablet.svg" />
-              <img class="main-header__logo-img main-header__logo-img--desktop" alt="Pink Home" src="img/logo-pink-white-desktop.svg" />
-            </a>
-          </div>
-          <nav class="main-header__nav main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </header>
     <main class="main">
-      <div class="main__slogan-wrapper">
-        <p class="main__slogan">
+      <div class="main__photo-page-slogan photo-page-slogan">
+        <p class="photo-page-slogan__text">
           Взгляните на фотографии, которые выкладывают пользователи!<br/> Видите, как не хватает ваших?
         </p>
       </div>
@@ -69,11 +50,13 @@
       <section class="main__photos photos">
         <h2 class="visually-hidden">Фотографии</h2>
         <div class="photos__header-item">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" />
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" />
-            <img class="photos__photo photos__photo--mobile" alt="Фотография" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" />
-          </picture>
+          <div class="photos__photo-wrapper">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" />
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" />
+              <img class="photos__photo photos__photo--full photos__photo--mobile" alt="Фотография" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" />
+            </picture>
+          </div>
           <div class="photos__header-comment-wrapper">
             <div class="photos__header-comment">
               <div class="photos__header-comment-top">
@@ -179,9 +162,9 @@
           </li>
         </ul>
       </section>
-      <p class="main__bottom-slogan">
-        Затмите их всех!<br />Выкладывайте все, что накопилось в телефоне!
-      </p>
+      <div class="main__photo-page-slogan main__photo-page-slogan--bottom photo-page-slogan">
+        <p class="photo-page-slogan__text">Затмите их всех!<br />Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
       <form class="main__post-image post-image" action="#">
         <div class="post-image__inner">
           <picture>
