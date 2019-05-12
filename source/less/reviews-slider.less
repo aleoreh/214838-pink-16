@@ -1,19 +1,5 @@
 @reviews-slider_color: #000000;
 
-.reviews-slider {
-  padding-top: 42px;
-  margin-bottom: 86px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 69px;
-  }
-
-  @media (min-width: @desktop-width) {
-    .container-desktop();
-    padding-top: 183px;
-  }
-}
-
 .reviews-slider__title {
   margin: 0;
 
@@ -48,8 +34,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
     margin-bottom: 35px;
   }
 }
@@ -74,6 +60,10 @@
   list-style: none;
 
   .container();
+
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }
 }
 
 .reviews-slider__item {

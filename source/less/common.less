@@ -45,3 +45,46 @@
 .triangle--2 {
   .triangle--2();
 }
+
+.triangle-base(@height, @width: 100%) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: @width;
+  height: @height;
+}
+
+.triangle-cut-lt(@height, @color) {
+  position: relative;
+
+  &::before {
+    .triangle-base(@height);
+    background: linear-gradient(to left top, transparent 50%, @color 50%);
+  }
+}
+
+.triangle-cut-rt(@height, @color) {
+  position: relative;
+
+  &::before {
+    .triangle-base(@height);
+    background: linear-gradient(to right top, transparent 50%, @color 50%);
+  }
+}
+
+.triangle-cut-top(@height, @color) {
+  position: relative;
+
+  &::before {
+    .triangle-base(@height / 2, 50%);
+    background: linear-gradient(to right top, transparent 50%, @color 50%);
+  }
+
+  &::after {
+    .triangle-base(@height / 2, 50%);
+    left: auto;
+    right: 0;
+    background: linear-gradient(to left top, transparent 50%, @color 50%);
+  }
+}

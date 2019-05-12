@@ -1,0 +1,65 @@
+.main-slogan {
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.main-slogan__inner {
+  .container();
+
+  min-height: 140px;
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 130px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 120px;
+    padding-top: 70px;
+  }
+}
+
+.main-slogan__item {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 24px;
+  font-weight: 200;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 45px;
+
+    &--squeezed {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    font-size: 50px;
+    line-height: 59px;
+
+    &--squeezed {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+  }
+}
