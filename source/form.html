@@ -37,23 +37,26 @@
       <h1 class="main-header__page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
   </header>
-  <main class="main">
-    <form class="main__contest-form contest-form" action="https://echo.htmlacademy.ru">
+  <main class="main__contest-page contest-page">
+    <div class="contest-page__contest-about">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</div>
+    <form class="contest-page__contest-form contest-form" action="https://echo.htmlacademy.ru">
       <fieldset class="contest-form__names-form names-form">
-        <label class="names-form__label">
-          Фамилия:
-          <input class="names-form__input" name="last_name" type="text" placeholder="Укажите фамилию *" />
-        </label>
-        <label class="names-form__label">
-          Имя:
-          <input class="names-form__input" name="first_name" type="text" placeholder="Введите ваше имя *" />
-        </label>
-        <label class="names-form__label">
-          Отчество:
-          <input class="names-form__input" name="patronymic" type="text" placeholder="Ну и отчество тоже" />
-        </label>
+        <div class="names-form__inner">
+          <label class="names-form__label">
+            <div class="names-form__label-text">Фамилия:</div>
+            <input class="names-form__input" name="last_name" type="text" placeholder="Укажите фамилию *" />
+          </label>
+          <label class="names-form__label">
+            <div class="names-form__label-text">Имя:</div>
+            <input class="names-form__input" name="first_name" type="text" placeholder="Введите ваше имя *" />
+          </label>
+          <label class="names-form__label">
+            <div class="names-form__label-text">Отчество:</div>
+            <input class="names-form__input" name="patronymic" type="text" placeholder="Ну и отчество тоже" />
+          </label>
+        </div>
       </fieldset>
-      <div class="contest-form__features app-form">
+      <div class="contest-form__app-form app-form">
         <h2 class="app-form__title">С каким приложением путешествовали?</h2>
         <ul class="app-form__list">
           <li class="app-form__item">
@@ -77,55 +80,59 @@
         </ul>
       </div>
       <fieldset class="contest-form__contacts-form contacts-form">
-        <label class="contacts-form__label">
-          Номер телефона
-          <input class="contacts-form__input" name="phone" type="text" placeholder="Номер, пожалуйста" />
-        </label>
-        <label class="contacts-form__label">
-          Адрес почты
-          <input class="contacts-form__input" name="email" type="text" placeholder="Введите почту *" />
-        </label>
+        <div class="contacts-form__inner">
+          <label class="contacts-form__label">
+            <div class="contacts-form__label-text">Номер телефона</div>
+            <input class="contacts-form__input" name="phone" type="text" placeholder="Номер, пожалуйста" />
+          </label>
+          <label class="contacts-form__label">
+            <div class="contacts-form__label-text">Адрес почты</div>
+            <input class="contacts-form__input" name="email" type="text" placeholder="Введите почту *" />
+          </label>
+        </div>
       </fieldset>
       <div class="contest-form__features-form features-form">
-        <h2 class="features-form__title">Ваши безбашенные достижения в путешествии</h2>
-        <ul class="features-form__list">
-          <li class="features-form__item">
-            <label>
-              <input class="features-form__toggle" name="feature" type="checkbox" value="shark" checked />
-              Сделал селфи с акулой
-            </label>
-          </li>
-          <li class="features-form__item">
-            <label>
-              <input class="features-form__toggle" name="feature" type="checkbox" value="beach" />
-              Обгорел на пляже
-            </label>
-          </li>
-          <li class="features-form__item">
-            <label>
-              <input class="features-form__toggle" name="feature" type="checkbox" value="chuck" />
-              Видел Чака Норриса
-            </label>
-          </li>
-          <li class="features-form__item">
-            <label>
-              <input class="features-form__toggle" name="feature" type="checkbox" value="souvenir" />
-              Накупил сувениров
-            </label>
-          </li>
-          <li class="features-form__item">
-            <label>
-              <input class="features-form__toggle" name="feature" type="checkbox" value="tower" />
-              Удержал башню
-            </label>
-          </li>
-          <li class="features-form__item">
-            <label>
-              <input class="features-form__toggle" name="feature" type="checkbox" value="hotel" />
-              Разгромил отель
-            </label>
-          </li>
-        </ul>
+        <div class="features-form__inner">
+          <h2 class="features-form__title">Ваши безбашенные достижения в путешествии</h2>
+          <ul class="features-form__list">
+            <li class="features-form__item">
+              <label>
+                <input class="features-form__toggle" name="feature" type="checkbox" value="shark" checked />
+                Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="features-form__item">
+              <label>
+                <input class="features-form__toggle" name="feature" type="checkbox" value="beach" />
+                Обгорел на пляже
+              </label>
+            </li>
+            <li class="features-form__item">
+              <label>
+                <input class="features-form__toggle" name="feature" type="checkbox" value="chuck" />
+                Видел Чака Норриса
+              </label>
+            </li>
+            <li class="features-form__item">
+              <label>
+                <input class="features-form__toggle" name="feature" type="checkbox" value="souvenir" />
+                Накупил сувениров
+              </label>
+            </li>
+            <li class="features-form__item">
+              <label>
+                <input class="features-form__toggle" name="feature" type="checkbox" value="tower" />
+                Удержал башню
+              </label>
+            </li>
+            <li class="features-form__item">
+              <label>
+                <input class="features-form__toggle" name="feature" type="checkbox" value="hotel" />
+                Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="contest-form__comment">
         <h2 class="contest-form__features-title">Опишите свои эмоции</h2>

@@ -20,50 +20,13 @@
   font-size: 18px;
 }
 
-.contest-form__names {
-  order: 0;
-
-  @media (max-width: @tablet-width) {
-    width: 100%;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 45%;
-  }
-}
-
-.contest-form__contacts {
-  order: 2;
-  width: 100%;
-}
-
 .contest-form__comment {
   order: 4;
   width: 100%;
 }
 
 .contest-form__features {
-  &--app {
-    order: 3;
 
-    @media (max-width: @tablet-width) {
-      width: 100%;
-    }
-
-    @media (min-width: @tablet-width) {
-      order: 1;
-      width: 45%;
-    }
-  }
-
-  &--achieve {
-    order: 1;
-    width: 100%;
-
-    @media (min-width: @tablet-width) {
-      order: 3;
-    }
-  }
 }
 
 .contest-form__comment-input {
@@ -86,4 +49,33 @@
 
 .contest-form__legend-required-sybmol {
   color: @feature-color;
+}
+
+.contest-form__names-form {
+  padding-bottom: 45px;
+
+  order: 0;
+
+  // @media (max-width: @tablet-width) {
+  //   width: 100%;
+  // }
+
+  // @media (min-width: @desktop-width) {
+  //   width: 45%;
+  // }
+}
+
+.contest-form__features-form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  order: 3;
+}
+
+.contest-form__contacts-form {
+  order: 4;
+}
+
+.contest-form__app-form {
+  order: 5;
 }
