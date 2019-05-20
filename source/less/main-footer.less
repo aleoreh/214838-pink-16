@@ -1,10 +1,10 @@
 .main-footer {
-  &--hidden {
+  &--mobile-hidden {
     display: none;
   }
 
   @media (min-width: @tablet-width) {
-    &--hidden {
+    &--mobile-hidden {
       display: block;
     }
   }
@@ -74,4 +74,8 @@
 .main-footer__social-links {
   margin-bottom: 46px;
   padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
