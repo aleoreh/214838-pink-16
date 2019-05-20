@@ -6,6 +6,8 @@
   padding-top: 90px;
   padding-bottom: 100px;
 
+  overflow-x: hidden;
+
   @media (min-width: @tablet-width) {
     padding-top: 90px;
     padding-bottom: 73px;
@@ -18,8 +20,80 @@
   }
 }
 
+.price-slider__list .offer__title {
+  width: 275px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
+}
+
+.price-slider__list .offer__feature-item:not(:first-child) {
+  font-size: 0;
+}
+
+.price-slider__inner {
+  & .offer--standard {
+    margin-left: calc(50vw - 690px);
+  }
+
+  & .offer--base {
+    margin-left: calc(50vw - 420px);
+  }
+
+  & .offer--unlim {
+    margin-left: calc(50vw - 970px);
+  }
+}
+
+.price-slider__inner {
+  @media (min-width: @tablet-width) {
+    & .offer--standard,
+    & .offer--base,
+    & .offer--unlim {
+      margin-left: 0;
+    }
+  }
+}
+
 .price-slider__list {
   padding-bottom: 100px;
 
   background-color: #f2f2f2;
+}
+
+.price-slider__markers-wrapper {
+  display: table;
+}
+
+.price-slider__markers {
+  position: absolute;
+
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+
+.price-slider__marker {
+  display: inline-block;
+  // box-sizing: border-box;
+
+  width: 6px;
+  height: 6px;
+
+  vertical-align: middle;
+
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-color: #bdc0c7;
+  background-clip: content-box;
+
+  &--current {
+    background-color: #ffffff;
+    border-color: #2d3447;
+  }
 }
