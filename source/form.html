@@ -57,27 +57,29 @@
         </div>
       </fieldset>
       <div class="contest-form__app-form app-form">
-        <h2 class="app-form__title">С каким приложением путешествовали?</h2>
-        <ul class="app-form__list">
-          <li class="app-form__item">
-            <label>
-              <input class="app-form__switch" name="os_switch" type="radio" value="ios" checked />
-              Pink для iOS
-            </label>
-          </li>
-          <li class="app-form__item">
-            <label>
-              <input class="app-form__switch" name="os_switch" type="radio" value="android" />
-              Pink на Android
-            </label>
-          </li>
-          <li class="app-form__item">
-            <label>
-              <input class="app-form__switch" name="os_switch" type="radio" value="windows" />
-              Windows Phone
-            </label>
-          </li>
-        </ul>
+        <div class="app-form__inner">
+          <h2 class="app-form__title">С каким приложением путешествовали?</h2>
+          <ul class="app-form__list">
+            <li class="app-form__item">
+              <label>
+                <input class="app-form__switch" name="os_switch" type="radio" value="ios" checked />
+                Pink для iOS
+              </label>
+            </li>
+            <li class="app-form__item">
+              <label>
+                <input class="app-form__switch" name="os_switch" type="radio" value="android" />
+                Pink на Android
+              </label>
+            </li>
+            <li class="app-form__item">
+              <label>
+                <input class="app-form__switch" name="os_switch" type="radio" value="windows" />
+                Windows Phone
+              </label>
+            </li>
+          </ul>
+        </div>
       </div>
       <fieldset class="contest-form__contacts-form contacts-form">
         <div class="contacts-form__inner">
@@ -91,54 +93,60 @@
           </label>
         </div>
       </fieldset>
-      <div class="contest-form__features-form features-form">
-        <div class="features-form__inner">
-          <h2 class="features-form__title">Ваши безбашенные достижения в путешествии</h2>
-          <ul class="features-form__list">
-            <li class="features-form__item">
+      <div class="contest-form__achievements-form achievements-form">
+        <div class="achievements-form__inner">
+          <h2 class="achievements-form__title">Ваши безбашенные достижения в путешествии</h2>
+          <ul class="achievements-form__list">
+            <li class="achievements-form__item">
               <label>
-                <input class="features-form__toggle" name="feature" type="checkbox" value="shark" checked />
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="shark" checked />
                 Сделал селфи с акулой
               </label>
             </li>
-            <li class="features-form__item">
+            <li class="achievements-form__item">
               <label>
-                <input class="features-form__toggle" name="feature" type="checkbox" value="beach" />
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="beach" />
                 Обгорел на пляже
               </label>
             </li>
-            <li class="features-form__item">
+            <li class="achievements-form__item">
               <label>
-                <input class="features-form__toggle" name="feature" type="checkbox" value="chuck" />
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="chuck" />
                 Видел Чака Норриса
               </label>
             </li>
-            <li class="features-form__item">
+            <li class="achievements-form__item">
               <label>
-                <input class="features-form__toggle" name="feature" type="checkbox" value="souvenir" />
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="souvenir" />
                 Накупил сувениров
               </label>
             </li>
-            <li class="features-form__item">
+            <li class="achievements-form__item">
               <label>
-                <input class="features-form__toggle" name="feature" type="checkbox" value="tower" />
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="tower" />
                 Удержал башню
               </label>
             </li>
-            <li class="features-form__item">
+            <li class="achievements-form__item">
               <label>
-                <input class="features-form__toggle" name="feature" type="checkbox" value="hotel" />
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="hotel" />
                 Разгромил отель
               </label>
             </li>
           </ul>
         </div>
       </div>
-      <div class="contest-form__comment">
-        <h2 class="contest-form__features-title">Опишите свои эмоции</h2>
-        <textarea class="contest-form__comment-input" cols="30" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <div class="contest-form__comment-form comment-form">
+        <div class="comment-form__inner">
+          <h2 class="comment-form__features-title">Опишите свои эмоции</h2>
+          <textarea class="comment-form__input" cols="30" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
       </div>
-      <button class="contest-form__submit" type="submit">Отправить форму</button>
+      <div class="contest-form__submit-form submit-form">
+        <div class="submit-form__inner">
+          <button class="submit-form__button" type="submit">Отправить форму</button>
+        </div>
+      </div>
       <div class="contest-form__legend">
         <span class="contest-form__legend-required-sybmol">*</span>
         &mdash;
