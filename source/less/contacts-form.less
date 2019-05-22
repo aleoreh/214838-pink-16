@@ -1,12 +1,15 @@
 .contacts-form {
-  width: 100%;
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
+  .form-fieldset();
 
-  font-size: 18px;
-  line-height: 30px;
-  border: none;
+  & legend {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    & legend {
+      display: block;
+    }
+  }
 }
 
 .contacts-form__inner {
@@ -21,6 +24,15 @@
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .contacts-form__label-text{

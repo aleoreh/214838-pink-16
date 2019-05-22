@@ -1,7 +1,11 @@
 .achievements-form {
-  background: #f2f2f2;
-  font-size: 18px;
-  line-height: 30px;
+  .form-fieldset();
+
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    background-color: none;
+  }
 }
 
 .achievements-form__inner {

@@ -23,11 +23,21 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .names-form__label-text {
   margin-bottom: 15px;
   font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-right: 20px;
+    align-self: center;
+  }
 }
 
 .names-form__input {

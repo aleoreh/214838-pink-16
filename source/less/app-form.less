@@ -1,9 +1,19 @@
 .app-form {
-  background: #f2f2f2;
+  .form-fieldset();
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    background-color: none;
+  }
 }
 
 .app-form__inner {
   .container();
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: auto;
+  }
 }
 
 .app-form__title {
@@ -30,6 +40,10 @@
   padding-left: 70px;
   font-size: 18px;
   line-height: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .app-form__item label {
