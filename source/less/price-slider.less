@@ -4,22 +4,124 @@
 
 .price-slider__inner {
   padding-top: 90px;
-  padding-bottom: 100px;
+  padding-bottom: 95px;
+
+  overflow-x: hidden;
+
+  background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
+    .container();
     padding-top: 90px;
     padding-bottom: 73px;
   }
 
   @media (min-width: @desktop-width) {
-    .container-desktop();
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
     padding-top: 78px;
     padding-bottom: 94px;
+  }
+
+  .offer--standard {
+    margin-left: calc(50vw - 690px);
+  }
+
+  .offer--base {
+    margin-left: calc(50vw - 420px);
+  }
+
+  .offer--unlim {
+    margin-left: calc(50vw - 970px);
+  }
+
+  @media (min-width: @tablet-width) {
+    .offer--standard,
+    .offer--base,
+    .offer--unlim {
+      margin-left: 0;
+    }
+  }
+}
+
+.price-slider__list .offer__title {
+  width: 275px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
+}
+
+.price-slider__list .offer__feature-item {
+  font-size: 0;
+
+  &--current {
+    font-size: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 0;
+
+    &--current {
+      font-size: 0;
+    }
+
+    &:first-child {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+      text-transform: none;
+    }
   }
 }
 
 .price-slider__list {
   padding-bottom: 100px;
+}
 
-  background-color: #f2f2f2;
+.price-slider__markers-wrapper {
+  position: relative;
+  display: table;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price-slider__markers {
+  position: absolute;
+
+  top: 40px;
+
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+
+.price-slider__marker {
+  display: inline-block;
+  // box-sizing: border-box;
+
+  width: 6px;
+  height: 6px;
+
+  vertical-align: middle;
+
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-color: #bdc0c7;
+  background-clip: content-box;
+
+  &--current {
+    background-color: #ffffff;
+    border-color: #2d3447;
+  }
 }

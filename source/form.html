@@ -10,7 +10,11 @@
 
 <body>
 
-  <header class="main-header">
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="main-header main-header--opened">
     <div class="main-header__top-wrapper">
       <div class="main-header__top">
         <a class="main-nav__logo" href="index.html">
@@ -21,6 +25,7 @@
           </picture>
         </a>
         <nav class="main-header__nav main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__inner">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
@@ -36,7 +41,123 @@
       <h1 class="main-header__page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
   </header>
-  <main class="main">
+  <main class="main__contest-page contest-page">
+    <div class="contest-page__contest-about">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</div>
+    <form class="contest-page__contest-form contest-form" action="https://echo.htmlacademy.ru">
+      <fieldset class="contest-form__names-form names-form">
+        <div class="names-form__inner">
+          <label class="names-form__label">
+            <div class="names-form__label-text">Фамилия:</div>
+            <input class="names-form__input" name="last_name" type="text" placeholder="Укажите фамилию *" />
+          </label>
+          <label class="names-form__label">
+            <div class="names-form__label-text">Имя:</div>
+            <input class="names-form__input" name="first_name" type="text" placeholder="Введите ваше имя *" />
+          </label>
+          <label class="names-form__label">
+            <div class="names-form__label-text">Отчество:</div>
+            <input class="names-form__input" name="patronymic" type="text" placeholder="Ну и отчество тоже" />
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="contest-form__app-form app-form">
+        <legend class="app-form__legend" align="center"><span>С каким приложением путешествовали?</span></legend>
+        <div class="app-form__inner">
+          <ul class="app-form__list">
+            <li class="app-form__item">
+              <label>
+                <input class="app-form__switch" name="os_switch" type="radio" value="ios" checked />
+                Pink для iOS
+              </label>
+            </li>
+            <li class="app-form__item">
+              <label>
+                <input class="app-form__switch" name="os_switch" type="radio" value="android" />
+                Pink на Android
+              </label>
+            </li>
+            <li class="app-form__item">
+              <label>
+                <input class="app-form__switch" name="os_switch" type="radio" value="windows" />
+                Windows Phone
+              </label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="contest-form__contacts-form contacts-form">
+        <legend class="contacts-form__legend" align="center"><span>Контактная информация</span></legend>
+        <div class="contacts-form__inner">
+          <label class="contacts-form__label">
+            <div class="contacts-form__label-text">Номер телефона</div>
+            <input class="contacts-form__input" name="phone" type="text" placeholder="Номер, пожалуйста" />
+          </label>
+          <label class="contacts-form__label">
+            <div class="contacts-form__label-text">Адрес почты</div>
+            <input class="contacts-form__input" name="email" type="text" placeholder="Введите почту *" />
+          </label>
+        </div>
+      </fieldset>
+      <div class="contest-form__achievements-form achievements-form">
+        <legend align="center"><span>Ваши безбашенные достижения в путешествии</span></legend>
+        <div class="achievements-form__inner">
+          <ul class="achievements-form__list">
+            <li class="achievements-form__item">
+              <label>
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="shark" checked />
+                Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="achievements-form__item">
+              <label>
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="beach" />
+                Обгорел на пляже
+              </label>
+            </li>
+            <li class="achievements-form__item">
+              <label>
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="chuck" />
+                Видел Чака Норриса
+              </label>
+            </li>
+            <li class="achievements-form__item">
+              <label>
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="souvenir" />
+                Накупил сувениров
+              </label>
+            </li>
+            <li class="achievements-form__item">
+              <label>
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="tower" />
+                Удержал башню
+              </label>
+            </li>
+            <li class="achievements-form__item">
+              <label>
+                <input class="achievements-form__toggle" name="feature" type="checkbox" value="hotel" />
+                Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contest-form__comment-form comment-form">
+        <div class="comment-form__inner">
+          <h2 class="comment-form__features-title">Опишите свои эмоции</h2>
+          <textarea class="comment-form__input" cols="30" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+      </div>
+      <div class="contest-form__submit-form submit-form">
+        <div class="submit-form__inner">
+          <button class="submit-form__button" type="submit">Отправить форму</button>
+        </div>
+      </div>
+      <div class="contest-form__legend">
+        <span class="contest-form__legend-required-sybmol">*</span>
+        &mdash;
+        <span class="contest-form__legend-text">Обязательные поля</span>
+      </div>
+    </form>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
@@ -47,19 +168,27 @@
         <ul class="main-footer__social-links social">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#" aria-label="twitter">
-              <svg class="social__twitter-icon" width="50" height="50">
+              <svg class="social__icon social__twitter-icon" width="20" height="20">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#" aria-label="facebook"></a>
+            <a class="social__link social__link--facebook" href="#" aria-label="facebook">
+              <svg class="social__icon social__facebook-icon" width="20" height="20">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" aria-label="youtube"></a>
+            <a class="social__link social__link--youtube" href="#" aria-label="youtube">
+              <svg class="social__icon social__youtube-icon" width="20" height="20">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-        <a class="main-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
+        <a class="main-footer__copyright" href="https://htmlacademy.ru"><span>Разработано</span></a>
       </div>
     </div>
   </footer>
