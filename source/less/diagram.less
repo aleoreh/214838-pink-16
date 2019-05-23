@@ -1,0 +1,76 @@
+.timer-background-position(@offsetx: 0, @offsety: 0) {
+  background-position: 17px + @offsetx 55px + @offsety, 0 + @offsetx 0 + @offsety, 70px + @offsetx 120px + @offsety;
+}
+
+.diagram {
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+    padding-left: 310px;
+    height: 296px;
+    background-image: url("../img/diagram-fill.svg"), url("../img/timer.svg"), url("../img/24.svg");
+    background-repeat: no-repeat;
+    background-size: 202px 202px, 238px 276px, 106px 70px;
+    .timer-background-position(0px, 20px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+
+    height: 320px;
+
+    padding-top: 127px;
+    padding-left: 0;
+  }
+}
+
+.diagram__title {
+  display: block;
+
+  line-height: 36px;
+  margin-bottom: 11px;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+    padding-left: 370px;
+  }
+}
+
+.diagram__text {
+  margin: 0;
+  margin-bottom: 14px;
+  padding-right: 10px;
+
+  line-height: 24px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 370px;
+    margin-bottom: 34px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    br {
+      display: inline;
+    }
+  }
+}
+
+.diagram__link {
+  color: #d22856;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 370px;
+    font-size: 18px;
+  }
+}
