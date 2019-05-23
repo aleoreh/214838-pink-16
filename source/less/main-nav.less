@@ -1,17 +1,82 @@
-// .main-nav--opened .main-nav__inner {
-//   margin-top: -70px;
-//   padding-top: 70px;
+.main-nav-button {
+  position: absolute;
+  content: "";
+
+  width: 50px;
+  height: 50px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.main-nav__open {
+  .main-nav-button;
+
+  top: 20px;
+  right: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+  }
+}
+
+.main-nav__close {
+  .main-nav-button;
+
+  right: 29px;
+  top: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 29px;
+    left: 18px;
+
+    width: 36px;
+    height: 5px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+}
+
+// .main-nav__close--hidden {
+//   display: none;
 // }
 
-.main-nav__toggle {
+.main-nav__toggle1 {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
 
   display: block;
-  width: 50px;
-  height: 70px;
+  width: 24px;
+  height: 24px;
 
   padding: 0;
 

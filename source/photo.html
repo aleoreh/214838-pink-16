@@ -14,7 +14,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="main-header">
+  <header class="main-header main-header--closed">
     <div class="main-header__top-wrapper">
       <div class="main-header__top">
         <a class="main-nav__logo" href="index.html">
@@ -25,7 +25,8 @@
           </picture>
         </a>
         <nav class="main-header__nav main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__close main-nav__close--hidden" type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <div class="main-nav__inner">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>

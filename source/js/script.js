@@ -1,10 +1,15 @@
 var mainHeader = document.querySelector('.main-header');
-var menuButton = document.querySelector('.main-nav__toggle');
+var openButton = document.querySelector('.main-nav__open');
+var closeButton = document.querySelector('.main-nav__close');
 
-menuButton.addEventListener('click', function() {
-  if (mainHeader.classList.contains('main-header--opened')) {
-    mainHeader.classList.remove('main-header--opened');
-  } else {
-    mainHeader.classList.add('main-header--opened');
-  }
-})
+openButton.addEventListener('click', function() {
+  mainHeader.classList.add('main-header--opened');
+  mainHeader.classList.remove('main-header--closed');
+  console.log('open');
+});
+
+closeButton.addEventListener('click', function() {
+  mainHeader.classList.add('main-header--closed');
+  mainHeader.classList.remove('main-header--opened');
+  console.log('close');
+});
