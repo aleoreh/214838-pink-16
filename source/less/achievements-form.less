@@ -44,6 +44,30 @@
   }
 }
 
-.achievements-form__item input {
-  display: none;
+.achievements-form__item label {
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+
+    left: 20px;
+    width: 35px;
+    height: 35px;
+
+    background-color: #ffffff;
+    background-image: none;
+    border: 2px solid #e5e5e5;
+  }
 }
+
+.achievements-form__toggle:checked + label::before {
+  background-image: url("../img/icon-yes-red.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.achievements-form__item input {
+  position: relative;
+  display: none;
+
+  }

@@ -47,15 +47,15 @@
       <fieldset class="contest-form__names-form names-form">
         <div class="names-form__inner">
           <label class="names-form__label">
-            <div class="names-form__label-text">Фамилия:</div>
+            <span class="names-form__label-text">Фамилия:</span>
             <input class="names-form__input" name="last_name" type="text" placeholder="Укажите фамилию *" />
           </label>
           <label class="names-form__label">
-            <div class="names-form__label-text">Имя:</div>
+            <span class="names-form__label-text">Имя:</span>
             <input class="names-form__input" name="first_name" type="text" placeholder="Введите ваше имя *" />
           </label>
           <label class="names-form__label">
-            <div class="names-form__label-text">Отчество:</div>
+            <span class="names-form__label-text">Отчество:</span>
             <input class="names-form__input" name="patronymic" type="text" placeholder="Ну и отчество тоже" />
           </label>
         </div>
@@ -65,22 +65,16 @@
         <div class="app-form__inner">
           <ul class="app-form__list">
             <li class="app-form__item">
-              <label>
-                <input class="app-form__switch" name="os_switch" type="radio" value="ios" checked />
-                Pink для iOS
-              </label>
+              <input class="app-form__switch" id="radio1" name="os_switch" type="radio" value="ios" checked />
+              <label for="radio1">Pink для iOS</label>
             </li>
             <li class="app-form__item">
-              <label>
-                <input class="app-form__switch" name="os_switch" type="radio" value="android" />
-                Pink на Android
-              </label>
+              <input class="app-form__switch" id="radio2" name="os_switch" type="radio" value="android" />
+              <label for="radio2">Pink на Android</label>
             </li>
             <li class="app-form__item">
-              <label>
-                <input class="app-form__switch" name="os_switch" type="radio" value="windows" />
-                Windows Phone
-              </label>
+              <input class="app-form__switch" id="radio3" name="os_switch" type="radio" value="windows" />
+              <label for="radio3">Windows Phone</label>
             </li>
           </ul>
         </div>
@@ -103,40 +97,28 @@
         <div class="achievements-form__inner">
           <ul class="achievements-form__list">
             <li class="achievements-form__item">
-              <label>
-                <input class="achievements-form__toggle" name="feature" type="checkbox" value="shark" checked />
-                Сделал селфи с акулой
-              </label>
+              <input class="achievements-form__toggle" id="check1" name="feature" type="checkbox" value="shark" checked />
+              <label for="check1">Сделал селфи с акулой</label>
             </li>
             <li class="achievements-form__item">
-              <label>
-                <input class="achievements-form__toggle" name="feature" type="checkbox" value="beach" />
-                Обгорел на пляже
-              </label>
+              <input class="achievements-form__toggle" id="check2" name="feature" type="checkbox" value="beach" />
+              <label for="check2">Обгорел на пляже</label>
             </li>
             <li class="achievements-form__item">
-              <label>
-                <input class="achievements-form__toggle" name="feature" type="checkbox" value="chuck" />
-                Видел Чака Норриса
-              </label>
+              <input class="achievements-form__toggle" id="check3" name="feature" type="checkbox" value="chuck" />
+              <label for="check3">Видел Чака Норриса</label>
             </li>
             <li class="achievements-form__item">
-              <label>
-                <input class="achievements-form__toggle" name="feature" type="checkbox" value="souvenir" />
-                Накупил сувениров
-              </label>
+              <input class="achievements-form__toggle" id="check4" name="feature" type="checkbox" value="souvenir" />
+              <label for="check4">Накупил сувениров</label>
             </li>
             <li class="achievements-form__item">
-              <label>
-                <input class="achievements-form__toggle" name="feature" type="checkbox" value="tower" />
-                Удержал башню
-              </label>
+              <input class="achievements-form__toggle" id="check5" name="feature" type="checkbox" value="tower" />
+              <label for="check5">Удержал башню</label>
             </li>
             <li class="achievements-form__item">
-              <label>
-                <input class="achievements-form__toggle" name="feature" type="checkbox" value="hotel" />
-                Разгромил отель
-              </label>
+              <input class="achievements-form__toggle" id="check6" name="feature" type="checkbox" value="hotel" />
+              <label for="check6">Разгромил отель</label>
             </li>
           </ul>
         </div>
