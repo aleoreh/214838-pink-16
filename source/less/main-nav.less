@@ -21,6 +21,10 @@
   top: 20px;
   right: 20px;
 
+  @media (min-width: @tablet-width) {
+    top: 45px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -38,6 +42,10 @@
 
   right: 20px;
   top: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 25px;
+  }
 
   &::before,
   &::after {
@@ -63,10 +71,6 @@
     box-shadow: none;
   }
 }
-
-// .main-nav__close--hidden {
-//   display: none;
-// }
 
 .main-nav__toggle1 {
   position: absolute;

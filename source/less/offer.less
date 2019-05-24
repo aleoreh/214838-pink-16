@@ -21,6 +21,11 @@
 
   color: #ffffff;
   background-color: #293664;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .offer__price-name {
@@ -33,6 +38,10 @@
 
   font-size: 24px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .offer__feature-item {
@@ -46,6 +55,11 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 4px;
+    padding-bottom: 10px;
+  }
 
   &::after {
     position: absolute;
@@ -80,4 +94,11 @@
   background-image: url("../img/icon-no-red.svg");
   background-size: 28px 28px;
   background-position: 95% 10px;
+}
+
+.offer__feature-item-text {
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
