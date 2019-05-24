@@ -101,11 +101,14 @@
 
 .reviews-slider__markers {
   position: absolute;
+  display: flex;
 
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+
+  justify-content: center;
 
   list-style: none;
   text-align: center;
@@ -113,10 +116,10 @@
 
 .reviews-slider__marker {
   display: inline-block;
-  // box-sizing: border-box;
 
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
 
   vertical-align: middle;
 
@@ -128,5 +131,9 @@
   &--current {
     background-color: #ffffff;
     border-color: #2d3447;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
