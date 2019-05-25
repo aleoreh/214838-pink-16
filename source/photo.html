@@ -14,7 +14,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="main-header main-header--closed">
+  <header class="main-header main-header--opened">
     <div class="main-header__top-wrapper">
       <div class="main-header__top">
         <a class="main-nav__logo" href="index.html">
@@ -182,20 +182,26 @@
           <div class="post-image__controls">
             <div class="post-image__buttons">
               <div class="post-image__feature">
-                <button class="post-image__feature-button post-image__feature-button--crop" type="button">
-                  <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-crop.svg">
+                <button class="post-image__feature-button post-image__feature-button--crop post-image__feature-button--active" type="button">
+                  <svg class="post-image__feature-image" width="44" height="44">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
                 </button>
                 <div class="post-image__feature-range">crop slider</div>
               </div>
               <div class="post-image__feature">
-                <button class="post-image__feature-button post-image__feature-button--fill" type="button">
-                  <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-fill.svg">
+                <button class="post-image__feature-button post-image__feature-button--fill post-image__feature-button--inactive" type="button">
+                  <svg class="post-image__feature-image" width="48" height="43">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
                 </button>
                 <div class="post-image__feature-range">fill slider</div>
               </div>
               <div class="post-image__feature">
-                <button class="post-image__feature-button post-image__feature-button--contrast" type="button">
-                  <img class="post-image__feature-image" alt="Crop" src="img/icon-editor-contrast.svg">
+                <button class="post-image__feature-button post-image__feature-button--contrast post-image__feature-button--inactive" type="button">
+                  <svg class="post-image__feature-image" width="32" height="32">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
                 </button>
                 <div class="post-image__feature-range">contrast slider</div>
               </div>
@@ -239,7 +245,12 @@
             </a>
           </li>
         </ul>
-        <a class="main-footer__copyright" href="https://htmlacademy.ru"><span>Разработано</span></a>
+        <a class="main-footer__copyright" href="https://htmlacademy.ru">
+          <span>Разработано</span>
+          <svg class="main-footer__copyright-icon" width="40" height="40">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
