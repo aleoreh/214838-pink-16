@@ -24,6 +24,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+    padding-left: 60px;
+  }
 }
 
 .achievements-form__item label {
@@ -39,6 +44,12 @@
     background-color: #ffffff;
     background-image: none;
     border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      left: 60px;
+    }
   }
 }
 

@@ -1,4 +1,5 @@
 .comment-form {
+  padding-top: 20px;
   .form-fieldset();
 }
 
@@ -13,10 +14,18 @@
   color: #d2377c;
 }
 
-.comment-form textarea {
+.comment-form__input {
+  box-sizing: border-box;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box;
   border: 2px solid #e5e5e5;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }

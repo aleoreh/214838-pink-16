@@ -14,16 +14,11 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <header class="main-header main-header--closed">
+    <header class="main-header main-header--opened">
       <div class="main-header__top-wrapper">
         <div class="main-header__top">
           <a class="main-nav__logo" href="index.html">
             <span class="main-nav__logo-img"></span>
-            <!-- <picture>
-                 <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x">
-                 <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x">
-                 <img class="main-nav__logo-img main-nav__logo-img--mobile" alt="Pink Home" src="img/logo-pink-white-mobile.svg">
-                 </picture> -->
           </a>
           <nav class="main-header__nav main-nav">
           <button class="main-nav__open" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -44,7 +39,10 @@
       </div>
     </header>
     <main class="main__contest-page contest-page">
-      <div class="contest-page__contest-about">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</div>
+      <div class="contest-page__contest-about">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p>Пожалуйста, заполните форму ниже:</p>
+      </div>
       <form class="contest-page__contest-form contest-form" action="https://echo.htmlacademy.ru">
         <div class="contest-form__names-form-wrapper">
           <fieldset class="contest-form__names-form names-form">
@@ -128,25 +126,27 @@
         <div class="contest-form__comment-form-wrapper">
           <fieldset class="contest-form__comment-form comment-form">
             <legend class="comment-form__legend">Опишите свои эмоции</legend>
-            <textarea class="comment-form__input" cols="30" name="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="comment-form__input" cols="30" name="comment" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
-        <div class="contest-form__submit-form submit-form">
-          <div class="submit-form__inner">
-            <button class="submit-form__button" type="submit">Отправить форму</button>
+        <div class="contest-form__submit-legend-wrapper">
+          <div class="contest-form__submit-form submit-form">
+            <div class="submit-form__inner">
+              <button class="submit-form__button" type="submit">Отправить форму</button>
+            </div>
           </div>
-        </div>
-        <div class="contest-form__legend">
-          <span class="contest-form__legend-required-sybmol">*</span>
-          &mdash;
-          <span class="contest-form__legend-text">Обязательные поля</span>
+          <div class="contest-form__legend">
+            <span class="contest-form__legend-required-sybmol">*</span>
+            &mdash;
+            <span class="contest-form__legend-text">Обязательные поля</span>
+          </div>
         </div>
       </form>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__body">
-          <a class="main-footer__logo">
+          <a class="main-footer__logo" href="index.html">
             <svg class="main-footer__logo-img main-footer__logo-img--mobile" version="1.1" id="footer-logo-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
