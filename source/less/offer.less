@@ -12,6 +12,8 @@
 }
 
 .offer__title {
+  position: relative;
+
   padding-top: 15px;
   padding-bottom: 20px;
 
@@ -35,6 +37,48 @@
   @media (min-width: @desktop-width) {
     padding-bottom: 20px;
     padding-top: 17px;
+  }
+}
+
+.offer__title--hit::before {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  left: 0;
+
+  width: 74px;
+  height: 73px;
+
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    background-position: -10px -10px;
+  }
+}
+
+.offer__title--hit::after {
+  position: absolute;
+  content: "Хит";
+
+  left: 2px;
+  top: 10px;
+
+  width: 50px;
+  height: 50px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  transform: rotate(-45deg);
+
+  @media (min-width: @tablet-width) {
+    left: -2px;
+    top: -2px;
   }
 }
 
