@@ -29,12 +29,23 @@
   }
 }
 
+.photos__photo-wrapper {
+  @media (min-width: @tablet-width) {
+    height: 510px;
+  }
+}
+
 .photos__photo {
   width: 100%;
 }
 
 .photos__photo--full {
   width: 100vw;
+
+  @media (min-width: @tablet-width) {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .photos__header-comment-wrapper {
