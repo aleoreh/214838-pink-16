@@ -135,9 +135,29 @@
   background-color: #bdc0c7;
   background-clip: content-box;
 
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868e;
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba(74, 75, 78, 0.3);
+  }
+
   &--current {
     background-color: #ffffff;
     border-color: #2d3447;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active,
+    &:focus {
+      background-color: #ffffff;
+    }
   }
 
   &:last-child {

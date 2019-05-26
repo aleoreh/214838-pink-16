@@ -15,12 +15,6 @@
       min-height: 545px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-repeat: no-repeat;
-
-      // @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      //   background-image: url("../img/iphone-hand-tablet@2x.png");
-      //   background-size: 700px auto;
-      //   background-position: 0 bottom;
-      // }
     }
   }
 
@@ -109,6 +103,17 @@
   background-color: rgba(255, 255, 255, 0);
   border: 3px solid #ffffff;
   border-radius: 25px;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(82, 16, 34, 0.3);
+    background-color: #ffffff;
+  }
 
   @media (min-width: @tablet-width) {
     max-width: 300px;

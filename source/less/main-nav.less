@@ -1,3 +1,6 @@
+@hover-color: #d22856;
+@active-color: rgba(255, 255, 255, 0.3);
+
 .main-nav-button {
   position: absolute;
   content: "";
@@ -13,6 +16,18 @@
   cursor: pointer;
 
   z-index: 2;
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @hover-color;
+  }
+
+  &:active::before,
+  &:focus::before,
+  &:active::after,
+  &:focus::after {
+    background-color: @active-color;
+  }
 }
 
 .main-nav__open {
@@ -38,6 +53,15 @@
     height: 4px;
     background-color: #ffffff;
     box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+  }
+
+  &:hover::before {
+    box-shadow: 0 10px 0 0 @hover-color, 0 20px 0 0 @hover-color;
+  }
+
+  &:active::before,
+  &:focus::before {
+    box-shadow: 0 10px 0 0 @active-color, 0 20px 0 0 @active-color;
   }
 }
 
@@ -120,12 +144,15 @@
 
   font-size: 24px;
   font-weight: 200;
-
   line-height: 70px;
   text-transform: uppercase;
   text-decoration: none;
 
   color: #ffffff;
+
+  &:hover {
+    fill: @hover-color;
+  }
 
   @media (min-width: @tablet-width) {
     line-height: 110px;
@@ -133,6 +160,62 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
+  }
+}
+
+.main-nav__logo-img {
+  display: inline-block;
+
+  width: 75px;
+  height: 22px;
+
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/logo-pink-white-tablet.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/logo-pink-white-desktop.svg");
+  }
+}
+
+.main-nav__logo[href] .main-nav__logo-img {
+  &:hover {
+    background-image: url("../img/logo-pink-hovered-mobile.svg");
+  }
+
+  &:active,
+  &:focus {
+    background-image: url("../img/logo-pink-active-mobile.svg");
+  }
+}
+
+.main-nav__logo-img--tablet,
+.main-nav__logo-img--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__logo-img--mobile {
+    display: none;
+  }
+
+  .main-nav__logo-img--tablet {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__logo-img--tablet {
+    display: none;
+  }
+
+  .main-nav__logo-img--desktop {
+    display: inline-block;
   }
 }
 
@@ -203,5 +286,16 @@
     text-transform: none;
 
     background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.main-nav__link[href] {
+  &:hover {
+    color: @hover-color;
+  }
+
+  &:active,
+  &:focus {
+    color: @active-color;
   }
 }

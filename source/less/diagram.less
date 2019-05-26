@@ -71,6 +71,17 @@
 .diagram__link {
   color: #d22856;
 
+  &:hover {
+    color: #283444;
+    text-decoration: underline;
+  }
+
+  &:active,
+  &:focus {
+    color: #cfd0d2;
+    text-decoration: none;
+  }
+
   @media (min-width: @desktop-width) {
     padding-left: 365px;
     font-size: 18px;
