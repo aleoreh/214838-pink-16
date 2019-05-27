@@ -1,3 +1,6 @@
+@hover-color: #283545;
+@active-color: #cf2853;
+
 .form-fieldset() {
   position: relative;
 
@@ -55,6 +58,36 @@
 
   @media (min-width: @desktop-width) {
     .container-desktop();
+  }
+}
+
+.contest-form input[type="text"]:hover,
+.contest-form textarea {
+  border-color: @hover-color;
+}
+
+.contest-form input[type="text"]:active,
+.contest-form input[type="text"]:focus,
+.contest-form textarea:active,
+.contest-form textarea:focus {
+  border-color: @active-color;
+}
+
+.contest-form input[type="radio"] ~ label,
+.contest-form input[type="checkbox"] ~ label {
+  &:hover::before,
+  &:hover::after {
+    border-color: @hover-color;
+  }
+}
+
+.contest-form input[type="radio"] ~ label,
+.contest-form input[type="checkbox"] ~ label {
+  &:active::before,
+  &:focus::before,
+  &:active::after,
+  &:focus::after {
+    border-color: @active-color;
   }
 }
 
