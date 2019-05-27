@@ -1,5 +1,5 @@
-@hover-color: #d22856;
-@active-color: rgba(255, 255, 255, 0.3);
+@main-nav_hover-color: #d22856;
+@main-nav_active-color: rgba(255, 255, 255, 0.3);
 
 .main-nav-button {
   position: absolute;
@@ -19,14 +19,14 @@
 
   &:hover::before,
   &:hover::after {
-    background-color: @hover-color;
+    background-color: @main-nav_hover-color;
   }
 
   &:active::before,
   &:focus::before,
   &:active::after,
   &:focus::after {
-    background-color: @active-color;
+    background-color: @main-nav_active-color;
   }
 }
 
@@ -56,12 +56,12 @@
   }
 
   &:hover::before {
-    box-shadow: 0 10px 0 0 @hover-color, 0 20px 0 0 @hover-color;
+    box-shadow: 0 10px 0 0 @main-nav_hover-color, 0 20px 0 0 @main-nav_hover-color;
   }
 
   &:active::before,
   &:focus::before {
-    box-shadow: 0 10px 0 0 @active-color, 0 20px 0 0 @active-color;
+    box-shadow: 0 10px 0 0 @main-nav_active-color, 0 20px 0 0 @main-nav_active-color;
   }
 }
 
@@ -151,7 +151,7 @@
   color: #ffffff;
 
   &:hover {
-    fill: @hover-color;
+    fill: @main-nav_hover-color;
   }
 
   @media (min-width: @tablet-width) {
@@ -313,11 +313,11 @@
 
 .main-nav__link[href] {
   &:hover {
-    color: @hover-color;
+    color: @main-nav_hover-color;
   }
 
   &:active,
   &:focus {
-    color: @active-color;
+    color: @main-nav_active-color;
   }
 }
