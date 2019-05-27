@@ -42,6 +42,18 @@
   }
 }
 
+.main-header .main-nav__inner {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.main-header--opened .main-nav__inner {
+  display: block;
+}
+
 .main-header__top-wrapper {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -52,27 +64,25 @@
   display: flex;
   flex-direction: column;
 
-  // background-color: #283645;
-
   @media (min-width: @desktop-width) {
-    .container-desktop();
+    .container();
     flex-direction: row;
     justify-content: space-between;
 
-    & .main-nav__toggle {
+    .main-nav__toggle {
       display: none;
     }
   }
 }
 
 .main-header__page-title-wrapper {
-  min-height: 140px;
+  min-height: 170px;
   padding-top: 30px;
   padding-left: 60px;
   padding-right: 60px;
 
   @media (min-width: @tablet-width) {
-    min-height: 260px;
+    min-height: 330px;
     padding-top: 70px;
   }
 
@@ -81,6 +91,7 @@
     padding-left: 280px;
     padding-right: 280px;
     padding-top: 65px;
+    padding-bottom: 105px;
   }
 
   &--form {
@@ -218,8 +229,7 @@
 .main-header__banner {
   position: relative;
 
-  width: 100vw;
-  height: 395px;
+  min-height: 395px;
 
   &::before {
     position: absolute;
@@ -229,7 +239,7 @@
     left: 0;
 
     width: 258px;
-    height: 286px;
+    min-height: 286px;
 
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
@@ -240,41 +250,59 @@
   }
 }
 
-.main-header--closed .main-nav__toggle::before {
-  content: "";
+.main-header--opened .main-nav__open {
+  display: none;
+}
 
+.main-header--opened .main-nav__close {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header--closed .main-nav__open {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header--closed .main-nav__close {
+  display: none;
+}
+
+.main-header .main-nav__toggle::before {
   position: absolute;
-  top: 21px;
-  left: 0;
-
-  width: 50px;
-  height: 4px;
+  content: "";
 
   background-color: #ffffff;
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
 
-.main-header--closed .main-nav__toggle:hover::before {
+.main-header .main-nav__toggle:hover::before {
   background-color: #d22856;
   box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
 }
 
-.main-header--closed .main-nav__toggle:active::before {
+.main-header .main-nav__toggle:active::before {
   background-color: rgba(210, 40, 86, 0.3);
   box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
 }
 
 .main-header--opened .main-nav__toggle {
-  top: 0;
-  right: 10px;
+  // top: 30px;
+  // right: 20px;
 
   &::before,
   &::after {
     content: "";
 
     position: absolute;
-    top: 24px;
-    left: 18px;
+    // top: 24px;
+    // left: 18px;
 
     width: 36px;
     height: 2px;
@@ -289,14 +317,30 @@
 
   &::after {
     transform: rotate(-45deg);
+    box-shadow: none;
   }
+}
 
-  &:active::before,
-  &:active::after {
-    background-color: rgba(255, 255, 255, 0.3);
+.main-header--opened .main-nav__toggle:hover {
+  &::before,
+  &::after {
+    background-color: #d22856;
+    box-shadow: none;
+  }
+}
+
+.main-header--opened .main-nav__toggle:active {
+  &::before,
+  &::after {
+    background-color: rgba(210, 40, 86, 0.3);
+    box-shadow: none;
   }
 }
 
 .main-header--closed .main-nav__inner {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

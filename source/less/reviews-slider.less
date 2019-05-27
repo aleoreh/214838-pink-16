@@ -2,6 +2,39 @@
 
 .reviews-slider {
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/icon-quotes-colored.svg");
+    background-repeat: no-repeat;
+    background-size: 80px 65px;
+    background-position: center 75px;
+  }
+}
+
+.reviews-slider__nav {
+  position: absolute;
+  content: "";
+
+  top: calc(50% - 20px);
+
+  fill: #d5d7db;
+
+  &:hover {
+    fill: #adb0b4;
+  }
+
+  &:active,
+  &:focus {
+    fill: #f1f1f1;
+  }
+}
+
+.reviews-slider__nav--back {
+  left: 50px;
+}
+
+.reviews-slider__nav--forward {
+  right: 50px;
 }
 
 .reviews-slider__title {
@@ -101,11 +134,14 @@
 
 .reviews-slider__markers {
   position: absolute;
+  display: flex;
 
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+
+  justify-content: center;
 
   list-style: none;
   text-align: center;
@@ -113,10 +149,10 @@
 
 .reviews-slider__marker {
   display: inline-block;
-  // box-sizing: border-box;
 
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
 
   vertical-align: middle;
 
@@ -125,8 +161,32 @@
   background-color: #bdc0c7;
   background-clip: content-box;
 
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868e;
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba(74, 75, 78, 0.3);
+  }
+
   &--current {
     background-color: #ffffff;
     border-color: #2d3447;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active,
+    &:focus {
+      background-color: #ffffff;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }

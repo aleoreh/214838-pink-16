@@ -12,8 +12,8 @@
 
   @media (min-width: @tablet-width) {
     .container();
-    padding-top: 90px;
-    padding-bottom: 73px;
+    padding-top: 85px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,8 +21,7 @@
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-
-    padding-top: 78px;
+    padding-top: 75px;
     padding-bottom: 94px;
   }
 
@@ -70,10 +69,21 @@
     }
 
     &:first-child {
-      padding-left: 10px;
+      padding-left: 15px;
       padding-right: 10px;
       font-size: 14px;
       text-transform: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 0;
+
+    &:first-child {
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 19px;
+      font-size: 18px;
     }
   }
 }
@@ -94,13 +104,16 @@
 
 .price-slider__markers {
   position: absolute;
+  display: flex;
 
-  top: 40px;
+  top: 35px;
 
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+
+  justify-content: center;
 
   list-style: none;
   text-align: center;
@@ -108,10 +121,10 @@
 
 .price-slider__marker {
   display: inline-block;
-  // box-sizing: border-box;
 
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
+  margin-right: 13px;
 
   vertical-align: middle;
 
@@ -120,8 +133,32 @@
   background-color: #bdc0c7;
   background-clip: content-box;
 
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868e;
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba(74, 75, 78, 0.3);
+  }
+
   &--current {
     background-color: #ffffff;
     border-color: #2d3447;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active,
+    &:focus {
+      background-color: #ffffff;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }

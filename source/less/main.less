@@ -4,7 +4,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -28,102 +28,35 @@
   @media (min-width: @tablet-width) {
     display: block;
 
-    .container();
-
     background-color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
 
+    padding-bottom: 70px;
+
     background-color: #f2f2f2;
   }
 }
 
 .main__diagram {
-  @media (min-width: @tablet-width) {
-    padding-top: 95px;
-    padding-left: 310px;
-    height: 296px;
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-size: 238px 276px;
-    background-position: 0 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    .container-desktop();
-
-    height: 320px;
-
-    padding-top: 127px;
-    padding-left: 0;
-  }
-}
-
-.main__diagram-title {
-  display: block;
-
-  line-height: 36px;
-  margin-bottom: 11px;
-
-  font-size: 30px;
-  font-weight: 700;
-
-  @media (min-width: @tablet-width) {
-    padding-right: 60px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 20px;
-    padding-left: 370px;
-  }
-}
-
-.main__diagram-text {
-  margin: 0;
-  margin-bottom: 14px;
-  padding-right: 10px;
-
-  line-height: 24px;
-
-  & br {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 370px;
-    margin-bottom: 34px;
-
-    font-size: 18px;
-    line-height: 30px;
-
-    & br {
-      display: inline;
-    }
-  }
-}
-
-.main__diagram-link {
-  color: #d22856;
-
-  @media (min-width: @desktop-width) {
-    padding-left: 370px;
-    font-size: 18px;
-  }
+  .container();
 }
 
 .main__reviews-slider {
   padding-top: 42px;
-  margin-bottom: 86px;
+  margin-bottom: 55px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 69px;
+    margin-bottom: 35px;
+    padding-top: 95px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 40px;
-    padding-top: 183px;
+    margin-bottom: 5px;
+    padding-top: 190px;
+    z-index: 1;
   }
 }
 
@@ -149,6 +82,7 @@
 
   @media (min-width: @tablet-width) {
     .triangle-cut-top(130px, #ffffff);
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -186,7 +120,11 @@
 }
 
 .main__features {
-  .triangle-cut-lt(50px, #ffffff);
+  .triangle-cut-lt(30px, #ffffff);
+
+  @media (min-width: @tablet-width) {
+    .triangle-cut-lt(50px, #ffffff);
+  }
 
   @media (min-width: @desktop-width) {
     .triangle-cut-lt(95px, #ffffff);
@@ -215,9 +153,9 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 95px;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
 
-    & br {
+    br {
       display: none;
     }
   }
@@ -232,11 +170,12 @@
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    & br {
+    padding-top: 5px;
+    padding-bottom: 70px;
+
+    br {
       display: block;
     }
-
-    padding-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
