@@ -13,3 +13,9 @@ closeButton.addEventListener('click', function() {
   mainHeader.classList.remove('main-header--opened');
   console.log('close');
 });
+
+var popup = document.querySelector('.popup');
+var popupClose = document.querySelector('.popup__close');
+popupClose.addEventListener('click', function() {
+  popup.classList.add('popup--hidden');
+});
