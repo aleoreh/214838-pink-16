@@ -2,6 +2,39 @@
 
 .reviews-slider {
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/icon-quotes-colored.svg");
+    background-repeat: no-repeat;
+    background-size: 80px 65px;
+    background-position: center 75px;
+  }
+}
+
+.reviews-slider__nav {
+  position: absolute;
+  content: "";
+
+  top: calc(50% - 20px);
+
+  fill: #d5d7db;
+
+  &:hover {
+    fill: #adb0b4;
+  }
+
+  &:active,
+  &:focus {
+    fill: #f1f1f1;
+  }
+}
+
+.reviews-slider__nav--back {
+  left: 50px;
+}
+
+.reviews-slider__nav--forward {
+  right: 50px;
 }
 
 .reviews-slider__title {
