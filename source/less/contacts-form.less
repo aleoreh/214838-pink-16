@@ -37,7 +37,11 @@
   margin-bottom: 5px;
 }
 
-.contacts-form__label input {
+.contacts-form__input-wrapper {
+  display: flex;
+}
+
+.contacts-form__input {
   box-sizing: border-box;
 
   width: 100%;
@@ -46,4 +50,23 @@
   padding-right: 20px;
 
   border: 2px solid #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-form__input + .contacts-form__input-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center center;
+  }
+
+  .contacts-form__input[name="email"] + .contacts-form__input-icon {
+    background-image: url("../img/icon-mail-colored.svg");
+  }
+
+  .contacts-form__input[name="phone"] + .contacts-form__input-icon {
+    background-image: url("../img/icon-phone-colored.svg");
+  }
 }
