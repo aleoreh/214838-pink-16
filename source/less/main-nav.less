@@ -192,6 +192,28 @@
   &:focus {
     background-image: url("../img/logo-pink-active-mobile.svg");
   }
+
+  @media (min-width: @tablet-width) {
+    &:hover {
+      background-image: url("../img/logo-pink-hovered-tablet.svg");
+    }
+
+    &:active,
+    &:focus {
+      background-image: url("../img/logo-pink-active-tablet.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      background-image: url("../img/logo-pink-hovered-desktop.svg");
+    }
+
+    &:active,
+    &:focus {
+      background-image: url("../img/logo-pink-active-desktop.svg");
+    }
+  }
 }
 
 .main-nav__logo-img--tablet,
